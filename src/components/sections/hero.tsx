@@ -13,7 +13,7 @@ export function Hero() {
         fill
         priority
         sizes="100vw"
-        className="object-cover opacity-40"
+        className="object-cover object-top opacity-40"
       />
       <div className="from-forest-900 via-forest-900/85 to-forest-900/40 absolute inset-0 bg-linear-to-t" />
 

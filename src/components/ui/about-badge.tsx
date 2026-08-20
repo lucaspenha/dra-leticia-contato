@@ -29,10 +29,10 @@ export function AboutPhoto({
       <Image
         src={src}
         alt={alt}
-        width={720}
-        height={860}
+        width={490}
+        height={746}
         sizes="(min-width: 900px) 45vw, 100vw"
-        className="aspect-[5/6] w-full object-cover"
+        className="aspect-5/6 w-full object-cover object-top"
       />
       <AboutBadge {...badge} />
     </div>

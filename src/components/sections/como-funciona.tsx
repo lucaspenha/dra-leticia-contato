@@ -21,7 +21,7 @@ export function ComoFunciona() {
               aria-hidden
               fill
               sizes="(min-width: 900px) 45vw, 100vw"
-              className="object-cover"
+              className="object-cover object-top"
             />
           </div>
         </Reveal>

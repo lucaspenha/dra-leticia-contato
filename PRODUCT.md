@@ -60,9 +60,10 @@ por contexto/seção). Site estático (sem login, sem backend próprio nesta ver
 - 7 depoimentos reais do Google (nome, nº de avaliações, tempo) em `content/testimonials.ts` — o
   texto de cada avaliação ainda não foi fornecido e está marcado como pendente no código (não foi
   inventado).
-- Fotos (foto da Dra. Letícia + pares antes/depois) ainda não fornecidas nesta sessão — usando
-  placeholders gerados localmente (`scripts/generate-placeholder-images.py`) até a cliente enviar
-  as fotos reais definitivas.
+- Fotos reais fornecidas pela cliente (`public/images/`): foto da Dra. Letícia (hero, "como
+  funciona", "sobre") e os 6 pares antes/depois da galeria. `public/og-image.png` (compartilhamento
+  social) continua sendo um placeholder gerado localmente — ainda precisa ser recriado a partir de
+  material real antes do lançamento.
 
 ## Product Principles
 
