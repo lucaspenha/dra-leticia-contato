@@ -8,7 +8,7 @@ export function Footer() {
 
   return (
     <footer className="bg-forest-900 text-cream-100">
-      <div className="mx-auto max-w-[1180px] px-[clamp(20px,5vw,48px)] py-16">
+      <div className="mx-auto max-w-295 px-[clamp(20px,5vw,48px)] py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
             <p className="font-display text-cream-50 text-2xl font-semibold">

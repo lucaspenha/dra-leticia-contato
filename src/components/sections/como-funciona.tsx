@@ -14,7 +14,7 @@ export function ComoFunciona() {
     <Section id="como-funciona" className="bg-cream-50">
       <div className="grid grid-cols-1 items-center gap-12 md:grid-cols-2">
         <Reveal>
-          <div className="rounded-brand shadow-soft relative aspect-[4/5] overflow-hidden">
+          <div className="rounded-brand shadow-soft relative aspect-4/5 overflow-hidden">
             <Image
               src={hero.image.src}
               alt=""

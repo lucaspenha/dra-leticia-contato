@@ -12,9 +12,9 @@ export function CtaFinal() {
     >
       <div
         aria-hidden
-        className="absolute inset-0 [background-image:radial-gradient(circle,rgba(211,171,132,0.6)_1px,transparent_1px)] [mask-image:radial-gradient(ellipse_at_center,black,transparent_75%)] [background-size:28px_28px] opacity-[0.15]"
+        className="absolute inset-0 bg-[radial-gradient(circle,rgba(211,171,132,0.6)_1px,transparent_1px)] mask-[radial-gradient(ellipse_at_center,black,transparent_75%)] bg-size-[28px_28px] opacity-[0.15]"
       />
-      <div className="relative mx-auto max-w-[1180px] px-[clamp(20px,5vw,48px)]">
+      <div className="relative mx-auto max-w-295 px-[clamp(20px,5vw,48px)]">
         <Reveal className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
           <Eyebrow center light>
             {ctaFinalSection.eyebrow}

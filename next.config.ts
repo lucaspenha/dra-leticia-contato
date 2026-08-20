@@ -3,9 +3,13 @@ import type { NextConfig } from "next";
 // CSP permite o iframe do Google Maps e os scripts de GA4/Meta Pixel (seção 11.3/11.8).
 // 'unsafe-inline' em script-src é necessário para o snippet de inicialização do
 // gtag/fbq; migrar para CSP baseada em nonce (via middleware) fica como melhoria futura.
+// Em desenvolvimento, o Next/React usa eval() para Fast Refresh e stack traces —
+// 'unsafe-eval' só é liberado fora de produção, nunca no build publicado.
+const isDev = process.env.NODE_ENV !== "production";
+
 const contentSecurityPolicy = [
   "default-src 'self'",
-  "script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://connect.facebook.net",
+  `script-src 'self' 'unsafe-inline' ${isDev ? "'unsafe-eval' " : ""}https://www.googletagmanager.com https://connect.facebook.net`,
   "style-src 'self' 'unsafe-inline'",
   "img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://www.facebook.com",
   "font-src 'self' data:",

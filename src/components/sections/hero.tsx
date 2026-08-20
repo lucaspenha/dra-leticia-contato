@@ -15,9 +15,9 @@ export function Hero() {
         sizes="100vw"
         className="object-cover opacity-40"
       />
-      <div className="from-forest-900 via-forest-900/85 to-forest-900/40 absolute inset-0 bg-gradient-to-t" />
+      <div className="from-forest-900 via-forest-900/85 to-forest-900/40 absolute inset-0 bg-linear-to-t" />
 
-      <div className="relative mx-auto flex max-w-[1180px] flex-col items-center gap-8 px-[clamp(20px,5vw,48px)] py-[clamp(96px,14vw,160px)] text-center">
+      <div className="relative mx-auto flex max-w-295 flex-col items-center gap-8 px-[clamp(20px,5vw,48px)] py-[clamp(96px,14vw,160px)] text-center">
         <Eyebrow center light>
           {hero.eyebrow}
         </Eyebrow>
