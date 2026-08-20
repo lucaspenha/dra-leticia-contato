@@ -14,18 +14,18 @@ Site atual (referência de design/conteúdo): uma **landing page única (one-pag
 
 ## 2. Stack do novo projeto (definida)
 
-| Camada                 | Tecnologia                                                                                                                |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Framework              | **Next.js** (App Router, versão atual estável)                                                                    |
-| Linguagem              | **TypeScript** (modo estrito)                                                                                       |
-| Estilos                | **Tailwind CSS** (design tokens do site atual migrados para `tailwind.config.ts`)                                 |
-| Componentização      | Componentes React por seção/bloco (ver seção 4), Client Components apenas onde há interatividade                     |
-| Fontes                 | `next/font/google` para **Cormorant Garamond** e **Manrope** (troca do `@font-face` manual do site atual) |
-| Imagens                | `next/image` para todas as fotos/galeria (troca das tags `<img>` do site atual)                                       |
-| Ícones SVG            | Componentes React (`.tsx`) ou biblioteca de ícones (ex.: `lucide-react`), no lugar dos SVGs inline copiados          |
-| Mapa                   | `iframe` do Google Maps embutido em um Client Component (sem chave de API, igual ao original)                           |
-| Gerenciador de pacotes | **npm** (commitar `package-lock.json`)                                                                            |
-| Deploy                 | **Vercel** (confirmado)                                                                                             |
+| Camada                 | Tecnologia                                                                                                  |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Framework              | **Next.js** (App Router, versão atual estável)                                                              |
+| Linguagem              | **TypeScript** (modo estrito)                                                                               |
+| Estilos                | **Tailwind CSS** (design tokens do site atual migrados para `tailwind.config.ts`)                           |
+| Componentização        | Componentes React por seção/bloco (ver seção 4), Client Components apenas onde há interatividade            |
+| Fontes                 | `next/font/google` para **Cormorant Garamond** e **Manrope** (troca do `@font-face` manual do site atual)   |
+| Imagens                | `next/image` para todas as fotos/galeria (troca das tags `<img>` do site atual)                             |
+| Ícones SVG             | Componentes React (`.tsx`) ou biblioteca de ícones (ex.: `lucide-react`), no lugar dos SVGs inline copiados |
+| Mapa                   | `iframe` do Google Maps embutido em um Client Component (sem chave de API, igual ao original)               |
+| Gerenciador de pacotes | **npm** (commitar `package-lock.json`)                                                                      |
+| Deploy                 | **Vercel** (confirmado)                                                                                     |
 
 > A stack observada no site atual (HTML estático + CSS puro com custom properties + JS vanilla IIFE) é **apenas referência de design/comportamento** — o novo projeto **não deve replicar essa stack**, e sim recriar o mesmo resultado visual/funcional usando Next.js, TypeScript e Tailwind.
 
@@ -38,32 +38,32 @@ Site atual (referência de design/conteúdo): uma **landing page única (one-pag
 
 ### 3.1 Paleta de cores
 
-| Token             | Valor                                                           | Uso                                                     |
-| ----------------- | --------------------------------------------------------------- | ------------------------------------------------------- |
-| `--forest-900`  | `#04241A`                                                     | Fundo hero, footer, CTA final (verde bem escuro)        |
-| `--forest-800`  | `#06301F`                                                     | Variação escura                                       |
-| `--forest-700`  | `#03422F`                                                     | Cor de marca principal (títulos, botão ghost)         |
-| `--forest-600`  | `#054D37`                                                     | Gradientes, hover                                       |
-| `--forest-line` | `rgba(211,171,132,0.22)`                                      | Linhas divisórias sutis (dourado translúcido)         |
-| `--green-300`   | `#8FDCC0`                                                     | Acento claro                                            |
-| `--green-400`   | `#4FC79A`                                                     | Gradiente                                               |
-| `--green-500`   | `#02A56D`                                                     | Verde de marca vivo                                     |
-| `--green-600`   | `#028C5C`                                                     | Hover/links                                             |
-| `--green-grad`  | `linear-gradient(135deg,#03422F 0%,#02A56D 55%,#4FC79A 100%)` | Botão`.btn--forest`, números do processo            |
-| `--gold-200`    | `#F2E3D2`                                                     | Texto sobre fundo escuro                                |
-| `--gold-300`    | `#E7CBAE`                                                     | Itálicos em títulos escuros, eyebrow claro            |
-| `--gold-500`    | `#D3AB84`                                                     | Acento premium                                          |
-| `--gold-600`    | `#BE9066`                                                     | Eyebrow, itálico em títulos claros                    |
-| `--gold-700`    | `#A97A50`                                                     | Hover em textos dourados                                |
-| `--gold-grad`   | `linear-gradient(135deg,#A97A50 0%,#D3AB84 55%,#F2E3D2 100%)` | Botão`.btn--gold`                                    |
-| `--cream-50`    | `#FBF8F3`                                                     | Fundo geral (claro, quente)                             |
-| `--cream-100`   | `#F4EDE2`                                                     | Fundo alternado de seções                             |
-| `--cream-200`   | `#E9DFCF`                                                     | Bordas de cards                                         |
-| `--ink-900`     | `#191D1A`                                                     | Texto principal                                         |
+| Token           | Valor                                                         | Uso                                                    |
+| --------------- | ------------------------------------------------------------- | ------------------------------------------------------ |
+| `--forest-900`  | `#04241A`                                                     | Fundo hero, footer, CTA final (verde bem escuro)       |
+| `--forest-800`  | `#06301F`                                                     | Variação escura                                        |
+| `--forest-700`  | `#03422F`                                                     | Cor de marca principal (títulos, botão ghost)          |
+| `--forest-600`  | `#054D37`                                                     | Gradientes, hover                                      |
+| `--forest-line` | `rgba(211,171,132,0.22)`                                      | Linhas divisórias sutis (dourado translúcido)          |
+| `--green-300`   | `#8FDCC0`                                                     | Acento claro                                           |
+| `--green-400`   | `#4FC79A`                                                     | Gradiente                                              |
+| `--green-500`   | `#02A56D`                                                     | Verde de marca vivo                                    |
+| `--green-600`   | `#028C5C`                                                     | Hover/links                                            |
+| `--green-grad`  | `linear-gradient(135deg,#03422F 0%,#02A56D 55%,#4FC79A 100%)` | Botão`.btn--forest`, números do processo               |
+| `--gold-200`    | `#F2E3D2`                                                     | Texto sobre fundo escuro                               |
+| `--gold-300`    | `#E7CBAE`                                                     | Itálicos em títulos escuros, eyebrow claro             |
+| `--gold-500`    | `#D3AB84`                                                     | Acento premium                                         |
+| `--gold-600`    | `#BE9066`                                                     | Eyebrow, itálico em títulos claros                     |
+| `--gold-700`    | `#A97A50`                                                     | Hover em textos dourados                               |
+| `--gold-grad`   | `linear-gradient(135deg,#A97A50 0%,#D3AB84 55%,#F2E3D2 100%)` | Botão`.btn--gold`                                      |
+| `--cream-50`    | `#FBF8F3`                                                     | Fundo geral (claro, quente)                            |
+| `--cream-100`   | `#F4EDE2`                                                     | Fundo alternado de seções                              |
+| `--cream-200`   | `#E9DFCF`                                                     | Bordas de cards                                        |
+| `--ink-900`     | `#191D1A`                                                     | Texto principal                                        |
 | `--ink-700`     | `#3A423C`                                                     | Texto secundário                                       |
 | `--ink-500`     | `#6B756E`                                                     | Texto de apoio (leads, parágrafos)                     |
 | `--wa-green`    | `#25D366`                                                     | Verde oficial do WhatsApp (CTA final, botão flutuante) |
-| `--wa-green-d`  | `#1ebe5a`                                                     | Hover do verde WhatsApp                                 |
+| `--wa-green-d`  | `#1ebe5a`                                                     | Hover do verde WhatsApp                                |
 
 **Resumo conceitual:** verde-floresta premium transmitindo elegância/natureza/saúde + dourado como acento de luxo + creme/marfim como fundo quente (evita branco puro/clínico).
 
@@ -111,21 +111,21 @@ Site atual (referência de design/conteúdo): uma **landing page única (one-pag
 
 ## 4. Componentes reutilizáveis
 
-| Componente                     | Classe raiz                                                                                                          | Descrição                                                                                                 |
-| ------------------------------ | -------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| Botão                         | `.btn` + modificador (`--gold`, `--green`, `--forest`, `--ghost`) + tamanho (`--sm`, `--lg`, `--xl`) | Pill button, ícone opcional (WhatsApp), efeito hover`translateY(-2px)` + sombra, `active: scale(0.97)` |
-| Eyebrow (rótulo)              | `.eyebrow` (+ `--center`, `--light`)                                                                           | Pequeno rótulo uppercase com linhas horizontais decorativas (`.eyebrow__line`) antes/depois do texto     |
-| Título de seção             | `.section__title` (+ `<em>` colorido em dourado)                                                                 | Serifada, itálico em destaque                                                                              |
-| Card de serviço               | `.card` (+ `--feature` destaque escuro, `--cta` destaque dourado)                                              | Título + texto + link "Quero saber mais →"                                                                |
-| Card de galeria (antes/depois) | `.gcard` (+ `.gcard__pair` para 2 imagens lado a lado)                                                           | Imagem com selo/label flutuante (glass) no rodapé                                                          |
-| Etapa do processo              | `.pstep`                                                                                                           | Número circular com gradiente + título + texto, lista ordenada                                            |
-| Badge sobre foto               | `.about__badge`                                                                                                    | Nome + especialidade sobre a foto, glass                                                                    |
-| Card de depoimento             | `.testi`                                                                                                           | Avatar com iniciais (sem foto real), nome, estrelas, citação                                              |
-| Carrossel de depoimentos       | `.testi-carousel`, `.testi-track`, `.testi-dots`, `.testi-arrow`                                             | Loop infinito por clonagem de itens, autoplay, drag/touch, dots + setas                                     |
-| Avaliações do Google         | `.greviews`                                                                                                        | Pill com ícone "G" colorido + estrelas + texto "Avaliações 5 estrelas no Google"                         |
-| Acordeão de FAQ               | `.faq__item`, `.faq__q`, `.faq__a`, `.faq__ico`                                                              | Abre/fecha via`grid-template-rows: 0fr → 1fr`, ícone "+" que vira "×"                                  |
-| Botão flutuante WhatsApp      | `.wa-float`                                                                                                        | Fixo no canto inferior direito, com pulso animado (`@keyframes pulse`)                                    |
-| Reveal on scroll               | `[data-reveal]` / `.is-visible`                                                                                  | Fade + slide-up ao entrar na viewport (via`IntersectionObserver`)                                         |
+| Componente                     | Classe raiz                                                                                          | Descrição                                                                                              |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| Botão                          | `.btn` + modificador (`--gold`, `--green`, `--forest`, `--ghost`) + tamanho (`--sm`, `--lg`, `--xl`) | Pill button, ícone opcional (WhatsApp), efeito hover`translateY(-2px)` + sombra, `active: scale(0.97)` |
+| Eyebrow (rótulo)               | `.eyebrow` (+ `--center`, `--light`)                                                                 | Pequeno rótulo uppercase com linhas horizontais decorativas (`.eyebrow__line`) antes/depois do texto   |
+| Título de seção                | `.section__title` (+ `<em>` colorido em dourado)                                                     | Serifada, itálico em destaque                                                                          |
+| Card de serviço                | `.card` (+ `--feature` destaque escuro, `--cta` destaque dourado)                                    | Título + texto + link "Quero saber mais →"                                                             |
+| Card de galeria (antes/depois) | `.gcard` (+ `.gcard__pair` para 2 imagens lado a lado)                                               | Imagem com selo/label flutuante (glass) no rodapé                                                      |
+| Etapa do processo              | `.pstep`                                                                                             | Número circular com gradiente + título + texto, lista ordenada                                         |
+| Badge sobre foto               | `.about__badge`                                                                                      | Nome + especialidade sobre a foto, glass                                                               |
+| Card de depoimento             | `.testi`                                                                                             | Avatar com iniciais (sem foto real), nome, estrelas, citação                                           |
+| Carrossel de depoimentos       | `.testi-carousel`, `.testi-track`, `.testi-dots`, `.testi-arrow`                                     | Loop infinito por clonagem de itens, autoplay, drag/touch, dots + setas                                |
+| Avaliações do Google           | `.greviews`                                                                                          | Pill com ícone "G" colorido + estrelas + texto "Avaliações 5 estrelas no Google"                       |
+| Acordeão de FAQ                | `.faq__item`, `.faq__q`, `.faq__a`, `.faq__ico`                                                      | Abre/fecha via`grid-template-rows: 0fr → 1fr`, ícone "+" que vira "×"                                  |
+| Botão flutuante WhatsApp       | `.wa-float`                                                                                          | Fixo no canto inferior direito, com pulso animado (`@keyframes pulse`)                                 |
+| Reveal on scroll               | `[data-reveal]` / `.is-visible`                                                                      | Fade + slide-up ao entrar na viewport (via`IntersectionObserver`)                                      |
 
 ---
 
@@ -150,16 +150,15 @@ Não há header/nav fixo no topo — a navegação principal ocorre pelo rodapé
 #### Hero (`#inicio`)
 
 - Eyebrow: "Harmonização Facial & Odontologia Estética"
-- H1: "Sua beleza natural, *elevada com sutileza.*"
+- H1: "Sua beleza natural, _elevada com sutileza._"
 - Subtítulo: "Botox, preenchimentos, bioestimuladores de colágeno e skinbooster pensados para a sua individualidade. Aqui você entende tudo o que será feito, com calma — e um cafézinho esperando por você."
 - CTAs: `Agendar avaliação` (botão dourado, ícone WhatsApp) + `Ver procedimentos` (âncora ghost para `#procedimentos`)
-- Selo de confiança (3 itens): "Atendimento individualizado — de acordo com você" · "Harmonização facial — com técnica e sutileza" · "**Araxá, Perdizes e Ribeirão Preto** — atendimento por agendamento" (copy generalizada para as 3 unidades; o texto original citava só Araxá – MG).
 - Foto de fundo com fade para verde escuro.
 
 #### Procedimentos (`#procedimentos`)
 
 - Eyebrow: "Procedimentos"
-- H2: "Cada rosto é único — *o seu tratamento também é.*"
+- H2: "Cada rosto é único — _o seu tratamento também é._"
 - Lead: "Uma combinação de técnicas pensada para valorizar a sua individualidade, com resultados sutis e naturais."
 - Grid de 7 cards:
   1. **Card destaque** "Especialidade" — Harmonização Facial Personalizada
@@ -174,7 +173,7 @@ Não há header/nav fixo no topo — a navegação principal ocorre pelo rodapé
 #### Galeria / Resultados (`#resultados`)
 
 - Eyebrow: "Antes & Depois"
-- H2: "Resultados que respeitam *quem você é.*"
+- H2: "Resultados que respeitam _quem você é._"
 - Lead: "Uma amostra de procedimentos realizados no consultório — sempre com sutileza e naturalidade."
 - 6 cards de galeria: Preenchimento Labial · Harmonização de Perfil · Lipo de Papada Enzimática (par antes/depois lado a lado) · Harmonização Nariz & Lábios · Contorno Mandibular · Botox — Rugas de Expressão.
 - Nota de rodapé: "Resultados variam de pessoa para pessoa e são avaliados individualmente em consulta."
@@ -182,7 +181,7 @@ Não há header/nav fixo no topo — a navegação principal ocorre pelo rodapé
 #### Como funciona (`#como-funciona`)
 
 - Eyebrow: "Como funciona"
-- H2: "Um caminho pensado *para você se sentir segura.*"
+- H2: "Um caminho pensado _para você se sentir segura._"
 - Lead: "Um bom papo, um plano claro e nenhuma pressa — para você entender tudo o que será feito."
 - 4 etapas numeradas:
   1. Conversa & escuta ativa
@@ -194,9 +193,9 @@ Não há header/nav fixo no topo — a navegação principal ocorre pelo rodapé
 #### Sobre (`#sobre`)
 
 - Eyebrow: "Quem cuida da sua harmonização"
-- H2: "Sutileza para revelar *a melhor versão de você.*"
+- H2: "Sutileza para revelar _a melhor versão de você._"
 - Texto: especialista em harmonizar faces de acordo com individualidade/vontades/personalidade; procedimentos citados: Botox, preenchimentos, bioestimuladores de colágeno, fios, skinbooster, PDRN.
-- Citação/quote: "Você não precisa de harmonização facial — você *MERECE*."
+- Citação/quote: "Você não precisa de harmonização facial — você _MERECE_."
 - Lista de diferenciais (check ✓): Especialista em Harmonização Facial · Atendimento individualizado, sem pressa · Explicação clara de cada etapa do tratamento.
 - CTA: "Agendar minha avaliação"
 - Foto com badge "Dra. Letícia Contato — Odontologia & Harmonização Facial"
@@ -204,14 +203,14 @@ Não há header/nav fixo no topo — a navegação principal ocorre pelo rodapé
 #### Depoimentos (`#depoimentos`)
 
 - Eyebrow: "Avaliações no Google"
-- H2: "Histórias de quem *já viveu essa transformação.*"
+- H2: "Histórias de quem _já viveu essa transformação._"
 - Link para avaliações no Google Maps com ícone "G", estrelas e texto "Avaliações 5 estrelas no Google".
 - Carrossel com 7 depoimentos reais (nome, nº de avaliações, tempo, 5 estrelas, texto). Nomes: Letícia Maria, Smart Canal, Carol Gladstone, Lais Bartalini, Aline Silva, Alessandra Diniz, João Vitor Martins.
 
 #### Localização (`#localizacao`)
 
 - Eyebrow: "Onde atendemos"
-- H2: sugestão de ajuste para múltiplas unidades, ex.: "Onde você encontra *a Dra. Letícia.*" (o H2 original "No Centro de Araxá – MG." era específico para um único endereço e deve ser generalizado agora que há 3 unidades).
+- H2: sugestão de ajuste para múltiplas unidades, ex.: "Onde você encontra _a Dra. Letícia._" (o H2 original "No Centro de Araxá – MG." era específico para um único endereço e deve ser generalizado agora que há 3 unidades).
 - **Unidades de atendimento (3 endereços):**
   1. **Araxá – MG** (unidade original) — Av. Antônio Carlos, 286 — Centro, Araxá – MG · CEP 38183-083 · Telefone (16) 99793-9679.
   2. **Perdizes – MG** — Rua Antônio Tomé de Resende, 276.
@@ -224,7 +223,7 @@ Não há header/nav fixo no topo — a navegação principal ocorre pelo rodapé
 #### FAQ (`#faq`)
 
 - Eyebrow: "Antes de decidir"
-- H2: "As dúvidas que *todo mundo tem.*"
+- H2: "As dúvidas que _todo mundo tem._"
 - 4 perguntas (acordeão):
   1. Existe idade certa para começar a harmonização facial?
   2. O resultado fica natural ou muda muito o meu rosto?
@@ -235,7 +234,7 @@ Não há header/nav fixo no topo — a navegação principal ocorre pelo rodapé
 #### CTA final (`#contato`)
 
 - Eyebrow: "Dê o primeiro passo"
-- H2: "Você não precisa — *você merece.*"
+- H2: "Você não precisa — _você merece._"
 - Texto: "Fale agora com a Dra. Letícia pelo WhatsApp e receba um plano claro para o seu caso. Sem compromisso."
 - Botão grande verde WhatsApp: "Chamar no WhatsApp"
 - Microtexto: "Resposta rápida em horário comercial"
@@ -296,7 +295,7 @@ No site atual toda a lógica está em um único `script.js` vanilla (IIFE). No n
    ```
 
    > Endereços de Perdizes e Ribeirão Preto ainda estão incompletos (sem número/CEP/telefone confirmados) — ajustar assim que os dados definitivos forem enviados. Confirmado com a cliente: **as 3 unidades usam o mesmo WhatsApp** `5516997939679`; não há telefone fixo separado por unidade além do já cadastrado em Araxá.
-   >
+
 2. **Links de WhatsApp dinâmicos** → função utilitária pura em `lib/whatsapp.ts` (`buildWhatsappLink(context?: string): string`), usada por um componente reutilizável `<WhatsAppButton context="..." />` (substitui o padrão `.js-wa` + `data-context`). Não precisa de `"use client"` — o `href` é calculado em tempo de build/servidor (é apenas concatenação de string).
 3. **Ano dinâmico no footer** → calculado no próprio Server Component com `new Date().getFullYear()` (não precisa de JS no cliente, diferente do site atual que usa `document.getElementById('year')`).
 4. **Mapa (iframe do Google, sem API key)** → componente `<LocationMap />` que recebe a lista `siteConfig.locations` e monta um `iframe` por unidade selecionada (`src` a partir do `mapsQuery` da unidade ativa). Com 3 endereços, precisa de um seletor de unidade (tabs, `<select>` ou accordion); o seletor em si exige estado (`"use client"`), mas cada `iframe` continua estático.
@@ -305,6 +304,7 @@ No site atual toda a lógica está em um único `script.js` vanilla (IIFE). No n
 
    - Reimplementar a lógica original em TS (clonagem de itens, `translate3d`, drag via Pointer Events, autoplay com `setInterval`, `normalize()` ao fim da transição) dentro de um hook `useInfiniteCarousel()`; ou
    - Usar uma lib madura como **Embla Carousel** (`embla-carousel-react`) com plugin de autoplay e loop nativo — **recomendado** para reduzir bugs de manutenção, mantendo a mesma UX (dots, setas, drag, pausa no hover, autoplay ~4.8s).
+
 7. **FAQ acordeão** → componente `<FaqItem />` com `useState<boolean>` para `isOpen`, ou usar **Radix UI Accordion** (`@radix-ui/react-accordion`) para acessibilidade pronta (`aria-expanded`, `aria-controls`, animação de altura). Estilizar com Tailwind mantendo o efeito visual do ícone "+" → "×".
 8. **Botão flutuante do WhatsApp** (`<FloatingWhatsApp />`) → Server Component simples (só precisa do link), com a animação de pulso feita via `keyframes` no `tailwind.config.ts` (`animate-wa-pulse`).
 
@@ -362,12 +362,15 @@ No App Router, todas as tags abaixo devem ser definidas com o objeto `Metadata` 
 
 ```ts
 export const metadata: Metadata = {
-  title: "Dra. Letícia Contato — Odontologia e Harmonização Facial | Araxá, Perdizes e Ribeirão Preto",
-  description: "Botox, preenchimentos, bioestimuladores de colágeno, skinbooster e lipo de papada enzimática com a Dra. Letícia Contato, em Araxá – MG, Perdizes – MG e Ribeirão Preto – SP. Harmonização facial individualizada, com atendimento humanizado. Agende sua avaliação pelo WhatsApp.",
+  title:
+    "Dra. Letícia Contato — Odontologia e Harmonização Facial | Araxá, Perdizes e Ribeirão Preto",
+  description:
+    "Botox, preenchimentos, bioestimuladores de colágeno, skinbooster e lipo de papada enzimática com a Dra. Letícia Contato, em Araxá – MG, Perdizes – MG e Ribeirão Preto – SP. Harmonização facial individualizada, com atendimento humanizado. Agende sua avaliação pelo WhatsApp.",
   openGraph: {
     type: "website",
     title: "Dra. Letícia Contato — Odontologia e Harmonização Facial",
-    description: "Harmonização facial sob medida para a sua individualidade — Botox, preenchimentos, bioestimuladores e mais. Atendimento em Araxá, Perdizes e Ribeirão Preto.",
+    description:
+      "Harmonização facial sob medida para a sua individualidade — Botox, preenchimentos, bioestimuladores e mais. Atendimento em Araxá, Perdizes e Ribeirão Preto.",
     images: ["/og-image.png"], // ver nota sobre imagem faltante na seção 9
   },
   themeColor: "#03422F",
@@ -383,16 +386,16 @@ export const metadata: Metadata = {
 
 ## 9. Assets necessários
 
-| Arquivo (nome original) | Uso                                                                                      | Local no novo projeto                                       |
-| ----------------------- | ---------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| `img-11`              | Foto principal da Dra. Letícia (hero, seção "como funciona", "sobre")                 | `/public/images/dra-leticia.png`                          |
-| `img-3`               | Antes/depois — Preenchimento labial                                                     | `/public/images/resultado-preenchimento-labial.png`       |
-| `img-4`               | Antes/depois — Harmonização de perfil                                                 | `/public/images/resultado-harmonizacao-perfil.png`        |
-| `img-5` / `img-6`   | Antes / Depois — Lipo de papada enzimática (par)                                       | `/public/images/resultado-lipo-papada-{antes,depois}.png` |
-| `img-7`               | Antes/depois — Harmonização nariz & lábios                                           | `/public/images/resultado-nariz-labios.png`               |
-| `img-8`               | Antes/depois — Contorno mandibular                                                      | `/public/images/resultado-contorno-mandibular.png`        |
-| `img-9`               | Antes/depois — Botox (rugas de expressão)                                              | `/public/images/resultado-botox-testa.png`                |
-| `img-2` (og:image)    | Imagem para compartilhamento em redes sociais —**faltando**, precisa ser recriada | `/public/og-image.png`                                    |
+| Arquivo (nome original) | Uso                                                                               | Local no novo projeto                                     |
+| ----------------------- | --------------------------------------------------------------------------------- | --------------------------------------------------------- |
+| `img-11`                | Foto principal da Dra. Letícia (hero, seção "como funciona", "sobre")             | `/public/images/dra-leticia.png`                          |
+| `img-3`                 | Antes/depois — Preenchimento labial                                               | `/public/images/resultado-preenchimento-labial.png`       |
+| `img-4`                 | Antes/depois — Harmonização de perfil                                             | `/public/images/resultado-harmonizacao-perfil.png`        |
+| `img-5` / `img-6`       | Antes / Depois — Lipo de papada enzimática (par)                                  | `/public/images/resultado-lipo-papada-{antes,depois}.png` |
+| `img-7`                 | Antes/depois — Harmonização nariz & lábios                                        | `/public/images/resultado-nariz-labios.png`               |
+| `img-8`                 | Antes/depois — Contorno mandibular                                                | `/public/images/resultado-contorno-mandibular.png`        |
+| `img-9`                 | Antes/depois — Botox (rugas de expressão)                                         | `/public/images/resultado-botox-testa.png`                |
+| `img-2` (og:image)      | Imagem para compartilhamento em redes sociais —**faltando**, precisa ser recriada | `/public/og-image.png`                                    |
 
 - **Status das fotos:** confirmado com a cliente que as fotos atuais (foto da Dra. e os pares antes/depois) são reais e autorizadas — porém **algumas serão substituídas** por novas fotos antes do lançamento (ainda não definido quais). Ao iniciar o desenvolvimento, usar as fotos atuais como placeholder de layout e deixar os componentes de imagem fáceis de trocar (`next/image` com caminho centralizado em `content/`), já que a troca é esperada.
 - Todas as imagens devem ser renderizadas com `next/image` (`<Image />`), definindo `width`/`height` ou `fill` + `sizes`, para otimização automática (lazy loading, formatos modernos).
@@ -400,7 +403,12 @@ export const metadata: Metadata = {
   ```ts
   import { Cormorant_Garamond, Manrope } from "next/font/google";
 
-  const cormorant = Cormorant_Garamond({ subsets: ["latin"], weight: ["500", "600", "700"], style: ["italic", "normal"], variable: "--font-display" });
+  const cormorant = Cormorant_Garamond({
+    subsets: ["latin"],
+    weight: ["500", "600", "700"],
+    style: ["italic", "normal"],
+    variable: "--font-display",
+  });
   const manrope = Manrope({ subsets: ["latin"], variable: "--font-body" });
   ```
 

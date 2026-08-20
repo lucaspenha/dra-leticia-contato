@@ -40,15 +40,6 @@ export function Hero() {
             Ver procedimentos
           </a>
         </div>
-
-        <ul className="text-cream-100/85 mt-4 flex flex-col gap-3 text-sm sm:flex-row sm:flex-wrap sm:justify-center sm:gap-8">
-          {hero.trustList.map((item) => (
-            <li key={item} className="flex items-center gap-2">
-              <span aria-hidden className="bg-gold-300 h-1.5 w-1.5 shrink-0 rounded-full" />
-              {item}
-            </li>
-          ))}
-        </ul>
       </div>
     </section>
   );

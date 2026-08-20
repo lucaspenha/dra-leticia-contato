@@ -5,11 +5,6 @@ export const hero = {
   titleEmphasis: "elevada com sutileza.",
   subtitle:
     "Botox, preenchimentos, bioestimuladores de colágeno e skinbooster pensados para a sua individualidade. Aqui você entende tudo o que será feito, com calma — e um cafézinho esperando por você.",
-  trustList: [
-    "Atendimento individualizado — de acordo com você",
-    "Harmonização facial — com técnica e sutileza",
-    "Araxá, Perdizes e Ribeirão Preto — atendimento por agendamento",
-  ],
   image: {
     src: "/images/dra-leticia.png",
     alt: "Dra. Letícia Contato, especialista em odontologia e harmonização facial",
