@@ -3,6 +3,7 @@ import { ComoFunciona } from "@/components/sections/como-funciona";
 import { Depoimentos } from "@/components/sections/depoimentos";
 import { Faq } from "@/components/sections/faq";
 import { Footer } from "@/components/sections/footer";
+import { SiteHeader } from "@/components/sections/header";
 import { Hero } from "@/components/sections/hero";
 import { Localizacao } from "@/components/sections/localizacao";
 import { Procedimentos } from "@/components/sections/procedimentos";
@@ -12,6 +13,7 @@ import { Sobre } from "@/components/sections/sobre";
 export default function Home() {
   return (
     <>
+      <SiteHeader />
       <Hero />
       <Procedimentos />
       <Resultados />
