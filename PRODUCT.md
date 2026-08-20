@@ -54,6 +54,10 @@ por contexto/seção). Site estático (sem login, sem backend próprio nesta ver
   documentada em docs/prompt-novo-projeto.md seção 3 — tratada como vínculo confirmado, não como
   direção a redesenhar.
 - CTA de WhatsApp com verde oficial (`#25D366`).
+- Logo real fornecida pela cliente (`public/images/logo.png`): ilustração de perfil em line art +
+  wordmark script + tagline, em dourado sobre fundo transparente. Usada no rodapé (lockup completo)
+  e derivada em `src/app/icon.png`/`apple-icon.png` (recorte só do ícone de perfil) para favicon e
+  ícones de app — vínculo visual confirmado, não recriar/redesenhar sem pedido explícito.
 
 ## Evidence on Hand
 

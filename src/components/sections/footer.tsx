@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { InstagramIcon } from "@/components/icons/instagram-icon";
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { footerContent } from "@/content/footer";
@@ -11,10 +13,13 @@ export function Footer() {
       <div className="mx-auto max-w-295 px-[clamp(20px,5vw,48px)] py-16">
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-3">
           <div>
-            <p className="font-display text-cream-50 text-2xl font-semibold">
-              {footerContent.wordmark}
-            </p>
-            <p className="text-gold-300 mt-1 text-sm">{footerContent.tagline}</p>
+            <Image
+              src="/images/logo.png"
+              alt={`${footerContent.wordmark} — ${footerContent.tagline}`}
+              width={834}
+              height={343}
+              className="h-auto w-56"
+            />
             <p className="text-cream-100/80 mt-4 text-sm">{footerContent.phrase}</p>
             <a
               href={siteConfig.socials.instagram}
