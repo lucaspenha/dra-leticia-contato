@@ -57,7 +57,7 @@ export function TestimonialsCarousel({ testimonials }: { testimonials: Testimoni
         type="button"
         aria-label="Depoimento anterior"
         onClick={() => emblaApi?.scrollPrev()}
-        className="border-cream-200 bg-cream-50 shadow-soft absolute top-1/2 left-0 hidden -translate-x-4 -translate-y-1/2 items-center justify-center rounded-full border p-2 transition-transform hover:-translate-x-5 sm:flex"
+        className="border-cream-200 bg-cream-50 shadow-soft absolute top-1/2 left-0 hidden h-11 w-11 -translate-x-4 -translate-y-1/2 items-center justify-center rounded-full border transition-transform hover:-translate-x-5 sm:flex"
       >
         <ChevronLeft className="text-forest-700 h-5 w-5" />
       </button>
@@ -65,7 +65,7 @@ export function TestimonialsCarousel({ testimonials }: { testimonials: Testimoni
         type="button"
         aria-label="Próximo depoimento"
         onClick={() => emblaApi?.scrollNext()}
-        className="border-cream-200 bg-cream-50 shadow-soft absolute top-1/2 right-0 hidden translate-x-4 -translate-y-1/2 items-center justify-center rounded-full border p-2 transition-transform hover:translate-x-5 sm:flex"
+        className="border-cream-200 bg-cream-50 shadow-soft absolute top-1/2 right-0 hidden h-11 w-11 translate-x-4 -translate-y-1/2 items-center justify-center rounded-full border transition-transform hover:translate-x-5 sm:flex"
       >
         <ChevronRight className="text-forest-700 h-5 w-5" />
       </button>
@@ -77,11 +77,16 @@ export function TestimonialsCarousel({ testimonials }: { testimonials: Testimoni
             type="button"
             aria-label={`Ir para o depoimento ${index + 1}`}
             onClick={() => emblaApi?.scrollTo(index)}
-            className={
-              "ease-brand h-2 rounded-full transition-all duration-300 " +
-              (index === selectedIndex ? "bg-gold-600 w-6" : "bg-cream-200 w-2")
-            }
-          />
+            className="flex h-11 w-11 items-center justify-center"
+          >
+            <span
+              aria-hidden
+              className={
+                "ease-brand h-2 rounded-full transition-all duration-300 " +
+                (index === selectedIndex ? "bg-gold-600 w-6" : "bg-cream-200 w-2")
+              }
+            />
+          </button>
         ))}
       </div>
     </div>

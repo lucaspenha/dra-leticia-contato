@@ -7,7 +7,7 @@ export function GoogleReviewsBadge({ href }: { href: string }) {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      className="border-cream-200 bg-cream-50 text-ink-900 shadow-soft ease-brand inline-flex items-center gap-2 rounded-full border px-5 py-2.5 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5"
+      className="border-cream-200 bg-cream-50 text-ink-900 shadow-soft ease-brand inline-flex items-center gap-2 rounded-full border px-5 py-3 text-sm font-semibold transition-transform duration-300 hover:-translate-y-0.5"
     >
       <span className="font-display text-lg font-bold text-[#4285F4]">G</span>
       <span className="text-gold-500 flex gap-0.5" aria-hidden>

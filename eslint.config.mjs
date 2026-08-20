@@ -12,6 +12,8 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Ferramentas de terceiros instaladas em .github (skill Impeccable) — não é código do app.
+    ".github/skills/**",
   ]),
 ]);
 

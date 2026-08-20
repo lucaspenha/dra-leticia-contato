@@ -29,7 +29,7 @@ export function LocationMap({ locations }: { locations: readonly Location[] }) {
               aria-controls={`panel-${location.id}`}
               onClick={() => setActiveId(location.id)}
               className={
-                "ease-brand rounded-full px-5 py-2.5 text-sm font-semibold transition-colors duration-300 " +
+                "ease-brand rounded-full px-5 py-3 text-sm font-semibold transition-colors duration-300 " +
                 (isActive
                   ? "bg-forest-700 text-cream-50"
                   : "border-cream-200 bg-cream-50 text-ink-700 hover:border-forest-700/30 border")
