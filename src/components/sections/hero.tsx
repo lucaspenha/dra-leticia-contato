@@ -1,22 +1,13 @@
-import Image from "next/image";
-
 import { WhatsAppButton } from "@/components/whatsapp-button";
 import { Eyebrow } from "@/components/ui/eyebrow";
 import { hero } from "@/content/hero";
 
 export function Hero() {
   return (
-    <section id="inicio" className="bg-forest-900 text-cream-50 relative isolate overflow-hidden">
-      <Image
-        src={hero.image.src}
-        alt={hero.image.alt}
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover object-top opacity-40"
-      />
-      <div className="from-forest-900 via-forest-900/85 to-forest-900/40 absolute inset-0 bg-linear-to-t" />
-
+    <section
+      id="inicio"
+      className="from-forest-900 via-forest-800 to-forest-700 text-cream-50 relative isolate overflow-hidden bg-linear-to-t"
+    >
       <div className="relative mx-auto flex max-w-295 flex-col items-center gap-8 px-[clamp(20px,5vw,48px)] py-[clamp(96px,14vw,160px)] text-center">
         <Eyebrow center light>
           {hero.eyebrow}
