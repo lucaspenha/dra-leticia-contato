@@ -71,9 +71,19 @@ const config: Config = {
           "70%": { boxShadow: "0 0 0 14px rgba(37,211,102,0)" },
           "100%": { boxShadow: "0 0 0 0 rgba(37,211,102,0)" },
         },
+        "accordion-down": {
+          from: { height: "0" },
+          to: { height: "var(--radix-accordion-content-height)" },
+        },
+        "accordion-up": {
+          from: { height: "var(--radix-accordion-content-height)" },
+          to: { height: "0" },
+        },
       },
       animation: {
         "wa-pulse": "wa-pulse 2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite",
+        "accordion-down": "accordion-down 0.3s cubic-bezier(0.22, 1, 0.36, 1)",
+        "accordion-up": "accordion-up 0.3s cubic-bezier(0.22, 1, 0.36, 1)",
       },
     },
   },
