@@ -7,7 +7,7 @@ export function Hero() {
   return (
     <section
       id="inicio"
-      className="from-forest-700 via-forest-800 to-forest-900 text-cream-50 relative isolate overflow-hidden bg-linear-to-t"
+      className="from-forest-600 via-forest-800 to-forest-900 text-cream-50 relative isolate overflow-hidden bg-linear-to-t"
     >
       <div className="relative mx-auto flex max-w-295 flex-col items-center gap-8 px-[clamp(20px,5vw,48px)] py-[clamp(50px,5vw,160px)] text-center">
         <a href="#inicio" aria-label="Dra. Letícia Contato — página inicial">
@@ -16,6 +16,8 @@ export function Hero() {
             alt="Dra. Letícia Contato — Odontologia & Harmonização Facial"
             width={834}
             height={343}
+            priority
+            unoptimized
             className="h-24 w-auto sm:h-28"
           />
         </a>
