@@ -1,4 +1,3 @@
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { GoogleReviewsBadge } from "@/components/ui/google-reviews-badge";
 import { Reveal } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
@@ -17,7 +16,6 @@ export function Depoimentos() {
   return (
     <Section id="depoimentos" className="bg-cream-50">
       <div className="flex flex-col items-center gap-4 text-center">
-        <Eyebrow center>{depoimentosSection.eyebrow}</Eyebrow>
         <SectionTitle center emphasis={depoimentosSection.titleEmphasis}>
           {depoimentosSection.title}
         </SectionTitle>

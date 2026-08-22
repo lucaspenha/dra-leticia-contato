@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-21T00:00:00.000Z",
+  "title": "Design System: Dra. Letícia Contato",
+  "extensions": {
+    "colorMeta": {
+      "forest-900": {
+        "role": "primary",
+        "displayName": "Deep Forest 900",
+        "canonical": "#04241A",
+        "tonalRamp": [
+          "#04241A",
+          "#06301F",
+          "#03422F",
+          "#054D37",
+          "#0E6B4A",
+          "#2A8A66",
+          "#5CAD8B",
+          "#B7D9C9"
+        ]
+      },
+      "forest-700": {
+        "role": "primary",
+        "displayName": "Deep Forest 700",
+        "canonical": "#03422F",
+        "tonalRamp": [
+          "#021F16",
+          "#04241A",
+          "#06301F",
+          "#03422F",
+          "#054D37",
+          "#2A8A66",
+          "#5CAD8B",
+          "#CDE6DA"
+        ]
+      },
+      "gold-600": {
+        "role": "primary",
+        "displayName": "Atelier Gold 600",
+        "canonical": "#BE9066",
+        "tonalRamp": [
+          "#3E2B1A",
+          "#5E4327",
+          "#8A6339",
+          "#A97A50",
+          "#BE9066",
+          "#D3AB84",
+          "#E7CBAE",
+          "#F2E3D2"
+        ]
+      },
+      "gold-500": {
+        "role": "primary",
+        "displayName": "Atelier Gold 500",
+        "canonical": "#D3AB84",
+        "tonalRamp": [
+          "#3E2B1A",
+          "#5E4327",
+          "#8A6339",
+          "#A97A50",
+          "#BE9066",
+          "#D3AB84",
+          "#E7CBAE",
+          "#F2E3D2"
+        ]
+      },
+      "green-500": {
+        "role": "secondary",
+        "displayName": "Signature Green 500",
+        "canonical": "#02A56D",
+        "tonalRamp": [
+          "#012E1F",
+          "#02422C",
+          "#02653F",
+          "#028C5C",
+          "#02A56D",
+          "#4FC79A",
+          "#8FDCC0",
+          "#D5F3E7"
+        ]
+      },
+      "wa-green": {
+        "role": "tertiary",
+        "displayName": "WhatsApp Green",
+        "canonical": "#25D366",
+        "tonalRamp": [
+          "#0B3D1F",
+          "#12622F",
+          "#199042",
+          "#1EBE5A",
+          "#25D366",
+          "#5FE08D",
+          "#9AEDB6",
+          "#D6F9E1"
+        ]
+      },
+      "cream-50": {
+        "role": "neutral",
+        "displayName": "Paper Cream 50",
+        "canonical": "#FBF8F3",
+        "tonalRamp": [
+          "#4A4238",
+          "#6B5F50",
+          "#8D7E6A",
+          "#B0A085",
+          "#D3C4A8",
+          "#E9DFCF",
+          "#F4EDE2",
+          "#FBF8F3"
+        ]
+      },
+      "cream-200": {
+        "role": "neutral",
+        "displayName": "Paper Cream 200",
+        "canonical": "#E9DFCF",
+        "tonalRamp": [
+          "#4A4238",
+          "#6B5F50",
+          "#8D7E6A",
+          "#B0A085",
+          "#D3C4A8",
+          "#E9DFCF",
+          "#F4EDE2",
+          "#FBF8F3"
+        ]
+      },
+      "ink-900": {
+        "role": "neutral",
+        "displayName": "Ink 900",
+        "canonical": "#191D1A",
+        "tonalRamp": [
+          "#191D1A",
+          "#3A423C",
+          "#6B756E",
+          "#8E968F",
+          "#B2B8B2",
+          "#D2D6D2",
+          "#E8EAE8",
+          "#F5F6F5"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Hero Display",
+        "purpose": "Hero H1 only — the largest, single use of the display role."
+      },
+      "headline": {
+        "displayName": "Section Headline",
+        "purpose": "Every SectionTitle; always paired with an italic gold emphasis span."
+      },
+      "title": {
+        "displayName": "Component Title",
+        "purpose": "Treatment-menu row titles, process-step titles, testimonial names, card titles."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Leads and paragraph copy, Manrope, ink-500/ink-700."
+      },
+      "label": {
+        "displayName": "Footer Label",
+        "purpose": "Uppercase tracked-caps footer column headers only (Navegação, Unidades) — not a section-heading pattern."
+      }
+    },
+    "shadows": [
+      {
+        "name": "soft",
+        "value": "0 20px 55px -22px rgba(4,36,26,0.5)",
+        "purpose": "Default lift under photo containers (GalleryCard, AboutPhoto) and forest-variant buttons."
+      },
+      {
+        "name": "gold",
+        "value": "0 14px 40px -14px rgba(190,144,102,0.55)",
+        "purpose": "Lift under the gold-variant primary CTA, matching the gold-grad gradient's hue."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-brand",
+        "value": "cubic-bezier(0.22, 1, 0.36, 1)",
+        "purpose": "Shared easing for button lift/press, Reveal fade-up, accordion open/close."
+      },
+      {
+        "name": "wa-pulse",
+        "value": "2.4s cubic-bezier(0.22, 1, 0.36, 1) infinite",
+        "purpose": "Ring pulse on the floating WhatsApp button."
+      }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "600px" },
+      { "name": "md", "value": "900px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1280px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button (gold)",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Highest-priority CTA per section (hero, featured procedure, Sobre) — gold gradient with matching gold shadow.",
+      "html": "<a class=\"ds-btn ds-btn-gold\" href=\"#\">Agendar avaliação</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9999px; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 1.125rem; padding: 16px 36px; transition: transform 0.3s cubic-bezier(0.22,1,0.36,1), box-shadow 0.3s cubic-bezier(0.22,1,0.36,1); } .ds-btn-gold { background: linear-gradient(135deg,#A97A50 0%,#D3AB84 55%,#F2E3D2 100%); color: #04241A; box-shadow: 0 14px 40px -14px rgba(190,144,102,0.55); } .ds-btn-gold:hover { transform: translateY(-2px); box-shadow: 0 18px 46px -14px rgba(190,144,102,0.65); } .ds-btn-gold:focus-visible { outline: 2px solid #D3AB84; outline-offset: 2px; } .ds-btn-gold:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "Secondary Button (forest)",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Secondary/orientation CTA — green gradient with soft shadow.",
+      "html": "<a class=\"ds-btn ds-btn-forest\" href=\"#\">Falar com a Dra. Letícia</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9999px; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 1rem; padding: 14px 28px; transition: transform 0.3s cubic-bezier(0.22,1,0.36,1); } .ds-btn-forest { background: linear-gradient(135deg,#03422F 0%,#02A56D 55%,#4FC79A 100%); color: #FBF8F3; box-shadow: 0 20px 55px -22px rgba(4,36,26,0.5); } .ds-btn-forest:hover { transform: translateY(-2px); filter: brightness(1.1); } .ds-btn-forest:focus-visible { outline: 2px solid #D3AB84; outline-offset: 2px; } .ds-btn-forest:active { transform: scale(0.97); }"
+    },
+    {
+      "name": "WhatsApp Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Solid WhatsApp-green CTA, reserved exclusively for the contact channel.",
+      "html": "<a class=\"ds-btn ds-btn-wa\" href=\"#\">Agendar pelo WhatsApp</a>",
+      "css": ".ds-btn-wa { display: inline-flex; align-items: center; justify-content: center; gap: 8px; border-radius: 9999px; font-family: Manrope, system-ui, sans-serif; font-weight: 600; font-size: 1rem; padding: 14px 28px; background: #25D366; color: #fff; transition: background 0.3s, transform 0.3s cubic-bezier(0.22,1,0.36,1); } .ds-btn-wa:hover { background: #1EBE5A; transform: translateY(-2px); } .ds-btn-wa:focus-visible { outline: 2px solid #D3AB84; outline-offset: 2px; }"
+    },
+    {
+      "name": "Treatment Menu Row",
+      "kind": "custom",
+      "refersTo": "menu-item",
+      "description": "Signature editorial listing row: italic gold numeral (meaningful sequence), serif title, description, arrow link — used for the 5-item treatment menu.",
+      "html": "<li class=\"ds-menu-item\"><span class=\"ds-menu-index\">01</span><h3 class=\"ds-menu-title\">Toxina Botulínica (Botox)</h3><p class=\"ds-menu-desc\">Suaviza rugas de expressão e previne novas marcas, mantendo a naturalidade dos movimentos do rosto.</p><a class=\"ds-menu-link\" href=\"#\">Saiba mais →</a></li>",
+      "css": ".ds-menu-item { display: grid; grid-template-columns: 3rem 1fr auto; align-items: baseline; column-gap: 20px; row-gap: 8px; border-bottom: 1px solid #E9DFCF; padding: 28px 0; } .ds-menu-index { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 1.125rem; color: #BE9066; } .ds-menu-title { grid-column: 2; font-family: 'Playfair Display', Georgia, serif; font-weight: 600; font-size: 1.5rem; color: #04241A; } .ds-menu-desc { grid-column: 2; font-family: Manrope, sans-serif; color: #6B756E; max-width: 32rem; } .ds-menu-link { grid-column: 3; grid-row: 1 / 3; align-self: center; color: #03422F; font-weight: 600; font-size: 0.875rem; text-decoration: none; transition: color 0.2s; } .ds-menu-link:hover { color: #028C5C; } .ds-menu-link:focus-visible { outline: 2px solid #D3AB84; outline-offset: 2px; }"
+    },
+    {
+      "name": "Gallery Card",
+      "kind": "card",
+      "refersTo": "card-photo",
+      "description": "Photo/before-after container: rounded-brand + soft shadow + glass caption pill inset at the bottom edge.",
+      "html": "<figure class=\"ds-gallery-card\"><img class=\"ds-gallery-img\" src=\"#\" alt=\"\" /><figcaption class=\"ds-gallery-caption\">Preenchimento Labial<span class=\"ds-gallery-label\">Antes &amp; depois</span></figcaption></figure>",
+      "css": ".ds-gallery-card { position: relative; overflow: hidden; border-radius: 22px; box-shadow: 0 20px 55px -22px rgba(4,36,26,0.5); } .ds-gallery-img { width: 100%; aspect-ratio: 1 / 1; object-fit: cover; display: block; } .ds-gallery-caption { position: absolute; left: 12px; right: 12px; bottom: 12px; border-radius: 9999px; padding: 8px 16px; font-family: Manrope, sans-serif; font-weight: 600; font-size: 0.875rem; color: #FBF8F3; background: rgba(4,36,26,0.55); backdrop-filter: blur(12px); } .ds-gallery-label { margin-left: 8px; font-weight: 400; color: rgba(244,237,226,0.8); }"
+    },
+    {
+      "name": "Testimonial Card",
+      "kind": "card",
+      "refersTo": "card-testimonial",
+      "description": "Text-only editorial quote card: square corners, gold top rule, oversized italic quotation mark — the deliberate exception to the photo-card radius/shadow language.",
+      "html": "<article class=\"ds-testimonial\"><span class=\"ds-testimonial-quote\">&ldquo;</span><p class=\"ds-testimonial-text\">Atendimento maravilhoso, resultado super natural.</p><div class=\"ds-testimonial-footer\"><p class=\"ds-testimonial-name\">Maria S.</p></div></article>",
+      "css": ".ds-testimonial { display: flex; flex-direction: column; gap: 20px; height: 100%; padding: 28px; background: #FBF8F3; border-top: 2px solid rgba(211,171,132,0.6); } .ds-testimonial-quote { font-family: 'Playfair Display', Georgia, serif; font-style: italic; font-size: 3.75rem; line-height: 1; color: rgba(211,171,132,0.7); } .ds-testimonial-text { font-family: Manrope, sans-serif; font-style: italic; font-size: 1.125rem; line-height: 1.6; color: #3A423C; flex: 1; } .ds-testimonial-footer { border-top: 1px solid #E9DFCF; padding-top: 16px; } .ds-testimonial-name { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; color: #04241A; }"
+    },
+    {
+      "name": "Section Title",
+      "kind": "custom",
+      "refersTo": "headline",
+      "description": "Recurring section heading: serif headline plus an italic gold emphasis phrase — the signature that ties every section together.",
+      "html": "<h2 class=\"ds-section-title\">Cada rosto é único — <em class=\"ds-section-emphasis\">o seu tratamento também é.</em></h2>",
+      "css": ".ds-section-title { font-family: 'Playfair Display', Georgia, serif; font-weight: 600; font-size: clamp(2rem,5.4vw,3.1rem); line-height: 1.1; letter-spacing: -0.01em; color: #04241A; } .ds-section-emphasis { font-style: italic; font-weight: 500; color: #BE9066; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Atelier Lookbook",
+    "overview": "The practice reads as a boutique atelier flipping through its own lookbook, not a clinic filling in a template. Every section is a large image-led moment or an editorial listing — a treatment menu, a magazine-style before/after spread, a portrait with a glass caption — never a centered headline stacked over an icon grid. The forest/gold/cream palette and the line-art logo are pre-existing brand commitments and stay fixed; what changed is the composition around them: asymmetric splits, bleed photography, and Playfair Display in place of Cormorant Garamond for every serif headline. Density is generous but not empty: text blocks sit against full-bleed or large-format photography rather than floating alone on cream. The one confirmed rejection is the decorative section eyebrow (a small uppercase kicker label sitting above every heading) — it was built, reviewed, and removed as a craft-floor violation; headings now carry their own weight without it.",
+    "keyCharacteristics": [
+      "Asymmetric, image-led grids in place of the centered-hero-plus-icon-grid template.",
+      "Every headline pairs a serif display line with an italic gold \"emphasis\" phrase.",
+      "Numerals are used only where content is genuinely sequential (treatment rows, process steps) — never as decorative section labeling.",
+      "Glass captions (translucent forest scrim + backdrop blur) label photography instead of separate text captions.",
+      "Pill-shaped buttons and full-bleed photography carry the only shadows; everything else is flat."
+    ],
+    "rules": [
+      {
+        "name": "The Gold-Is-Rare Rule",
+        "body": "Gold never fills a large surface on its own — it appears as the italic emphasis word, a hairline divider, a numeral, or the gradient sliver on one CTA per section. It is legible precisely because it is scarce.",
+        "section": "colors"
+      },
+      {
+        "name": "The Italic Gold Emphasis Rule",
+        "body": "Every SectionTitle closes on an italic word or phrase in gold (gold-600 on light sections, gold-300 on dark). This is the one recurring signature that ties every section heading together.",
+        "section": "typography"
+      },
+      {
+        "name": "The Meaningful Numeral Rule",
+        "body": "Serif italic gold numerals label the treatment-menu rows and the four ComoFunciona steps because that content is genuinely counted and ordered. Numerals are never applied as decorative section labeling — that usage (a numbered eyebrow above headings) was built, reviewed, and removed.",
+        "section": "typography"
+      },
+      {
+        "name": "The Photography-Lifts, Text-Doesn't Rule",
+        "body": "Shadows only ever sit under an image container or a button. A text-only card (testimonial) stays flat and gets a border treatment instead.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Two Silhouettes Rule",
+        "body": "Anything that is a photograph gets rounded-brand + shadow-soft. Anything that is a quote or text block gets square corners + a single gold rule. Don't cross the two.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do pair every SectionTitle with an italic gold emphasis phrase (the Italic Gold Emphasis Rule).",
+      "Do use asymmetric, image-led grids (hero split, lookbook gallery, reversed about split) instead of a centered hero over an icon grid.",
+      "Do reserve serif italic gold numerals for content that is genuinely sequential or counted (treatment-menu rows, process steps).",
+      "Do keep photographic containers at rounded-brand (22px) + shadow-soft, and give text-only cards square corners + a gold rule instead.",
+      "Do keep wa-green exclusive to WhatsApp contact CTAs so it reads as \"the contact channel,\" not a general accent."
+    ],
+    "donts": [
+      "Don't add an eyebrow/kicker label above a section heading. The shared Eyebrow component and all its usages were built, then removed after finish review flagged it as a systemic craft-floor violation — it is a defect this build carries the memory of, not a pattern to reintroduce.",
+      "Don't use numerals decoratively. A numeral is only earned by content that is actually ordered or counted (five procedures, four steps) — never used to dress up a section label.",
+      "Don't apply a drop shadow to a text-only card; shadows are reserved for photographic containers and buttons."
+    ]
+  }
+}

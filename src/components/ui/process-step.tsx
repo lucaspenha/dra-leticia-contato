@@ -4,17 +4,15 @@ type ProcessStepProps = {
   description: string;
 };
 
-/** Etapa numerada do processo (ver `.pstep` na seção 4). */
+/** Etapa numerada em formato editorial (numeral serifado + regra dourada no topo). */
 export function ProcessStep({ number, title, description }: ProcessStepProps) {
   return (
-    <li className="flex gap-5">
-      <span className="bg-green-grad font-display text-cream-50 shadow-soft flex h-12 w-12 shrink-0 items-center justify-center rounded-full text-xl font-semibold">
-        {number}
+    <li className="border-gold-500/40 flex flex-col gap-3 border-t pt-6 md:h-full">
+      <span className="font-display text-gold-600 text-4xl font-medium italic">
+        {String(number).padStart(2, "0")}
       </span>
-      <div>
-        <h3 className="font-display text-forest-900 text-xl font-semibold">{title}</h3>
-        <p className="text-ink-500 mt-1">{description}</p>
-      </div>
+      <h3 className="font-display text-forest-900 text-xl font-semibold">{title}</h3>
+      <p className="text-ink-500">{description}</p>
     </li>
   );
 }

@@ -1,3 +1,4 @@
+import { clsx } from "clsx";
 import Image from "next/image";
 
 type GalleryCardProps = {
@@ -5,10 +6,17 @@ type GalleryCardProps = {
   label: string;
   image: { src: string; alt: string };
   pair?: { src: string; alt: string };
+  aspectClassName?: string;
 };
 
 /** Card de galeria antes/depois com selo glass no rodapé (ver `.gcard`). */
-export function GalleryCard({ title, label, image, pair }: GalleryCardProps) {
+export function GalleryCard({
+  title,
+  label,
+  image,
+  pair,
+  aspectClassName = "aspect-square",
+}: GalleryCardProps) {
   return (
     <figure className="group rounded-brand shadow-soft relative overflow-hidden">
       <div className={pair ? "grid grid-cols-2" : undefined}>
@@ -18,7 +26,7 @@ export function GalleryCard({ title, label, image, pair }: GalleryCardProps) {
           width={480}
           height={480}
           sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"
-          className="aspect-square w-full object-cover"
+          className={clsx("w-full object-cover", aspectClassName)}
         />
         {pair ? (
           <Image
@@ -27,7 +35,7 @@ export function GalleryCard({ title, label, image, pair }: GalleryCardProps) {
             width={480}
             height={480}
             sizes="(min-width: 900px) 33vw, (min-width: 600px) 50vw, 100vw"
-            className="aspect-square w-full object-cover"
+            className={clsx("w-full object-cover", aspectClassName)}
           />
         ) : null}
       </div>

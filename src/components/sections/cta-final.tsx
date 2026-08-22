@@ -1,4 +1,3 @@
-import { Eyebrow } from "@/components/ui/eyebrow";
 import { SectionTitle } from "@/components/ui/section-title";
 import { Reveal } from "@/components/ui/reveal";
 import { WhatsAppButton } from "@/components/whatsapp-button";
@@ -16,9 +15,6 @@ export function CtaFinal() {
       />
       <div className="relative mx-auto max-w-295 px-[clamp(20px,5vw,48px)]">
         <Reveal className="mx-auto flex max-w-2xl flex-col items-center gap-6 text-center">
-          <Eyebrow center light>
-            {ctaFinalSection.eyebrow}
-          </Eyebrow>
           <SectionTitle center light emphasis={ctaFinalSection.titleEmphasis}>
             {ctaFinalSection.title}
           </SectionTitle>

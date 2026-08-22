@@ -41,7 +41,7 @@ const config: Config = {
         },
       },
       fontFamily: {
-        display: ["var(--font-display)", "Fraunces", "Georgia", "serif"],
+        display: ["var(--font-display)", "Playfair Display", "Georgia", "serif"],
         body: ["var(--font-body)", "system-ui", "-apple-system", "sans-serif"],
       },
       backgroundImage: {
