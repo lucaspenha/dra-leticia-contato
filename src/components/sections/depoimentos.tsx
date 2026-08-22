@@ -6,7 +6,6 @@ import { TestimonialsCarousel } from "@/components/testimonials-carousel";
 import { testimonials } from "@/content/testimonials";
 
 const depoimentosSection = {
-  eyebrow: "Avaliações no Google",
   title: "Histórias de quem",
   titleEmphasis: "já viveu essa transformação.",
   googleReviewsHref: "https://www.google.com/maps",

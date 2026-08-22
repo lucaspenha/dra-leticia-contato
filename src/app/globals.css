@@ -11,6 +11,12 @@
   --color-foreground: var(--foreground);
 }
 
+/* Navegação âncora da trilha (rail) precisa animar, não saltar — senão o
+   conteúdo revelado por IntersectionObserver pode nunca cruzar o viewport. */
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--background);
   color: var(--foreground);

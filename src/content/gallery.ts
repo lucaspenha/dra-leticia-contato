@@ -1,9 +1,8 @@
-// Conteúdo da seção Galeria/Resultados (`#resultados`) — 6 cards (seção 5.1).
+// Conteúdo da seção Galeria/Resultados (`#resultados`) — capítulo 03 da trilha narrativa.
 export const resultadosSection = {
-  eyebrow: "Antes & Depois",
-  title: "Resultados que respeitam",
-  titleEmphasis: "quem você é.",
-  lead: "Uma amostra de procedimentos realizados no consultório — sempre com sutileza e naturalidade.",
+  title: "Provas de que sutileza",
+  titleEmphasis: "também é resultado.",
+  lead: "Um recorte real dos procedimentos feitos no consultório — sempre avaliados caso a caso, nunca em série.",
   footnote: "Resultados variam de pessoa para pessoa e são avaliados individualmente em consulta.",
 };
 

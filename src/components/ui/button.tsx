@@ -44,7 +44,7 @@ export function Button({
       target={isExternal ? "_blank" : undefined}
       rel={isExternal ? "noopener noreferrer" : undefined}
       className={clsx(
-        "font-body inline-flex items-center justify-center gap-2 rounded-full font-semibold",
+        "font-body inline-flex items-center justify-center gap-2 rounded-full font-semibold whitespace-nowrap",
         "ease-brand transition-all duration-300 hover:-translate-y-0.5 active:scale-[0.97]",
         "motion-reduce:transition-none motion-reduce:hover:translate-y-0",
         variantClasses[variant],

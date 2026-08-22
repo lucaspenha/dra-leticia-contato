@@ -1,11 +1,10 @@
-// Conteúdo da seção Como funciona (`#como-funciona`) — 4 etapas (seção 5.1).
+// Conteúdo da seção Como funciona (`#como-funciona`) — capítulo 04 da trilha narrativa.
 export const comoFuncionaSection = {
-  eyebrow: "Como funciona",
-  title: "Um caminho pensado",
-  titleEmphasis: "para você se sentir segura.",
-  lead: "Um bom papo, um plano claro e nenhuma pressa — para você entender tudo o que será feito.",
-  ctaLabel: "Quero avaliar o meu caso",
-  whatsappContext: "como-funciona:avaliar-meu-caso",
+  title: "Da primeira mensagem",
+  titleEmphasis: "ao resultado que é só seu.",
+  lead: "Quatro etapas, sempre nessa ordem, sempre no seu tempo — para você chegar ao consultório já sabendo exatamente o que esperar.",
+  ctaLabel: "Começar pelo capítulo 1",
+  whatsappContext: "como-funciona:comecar-avaliacao",
 };
 
 export type ProcessStepItem = {
@@ -17,26 +16,26 @@ export type ProcessStepItem = {
 export const processSteps: ProcessStepItem[] = [
   {
     number: 1,
-    title: "Conversa & escuta ativa",
+    title: "Você chama no WhatsApp",
     description:
-      "Entendemos suas vontades, expectativas e o que te incomoda — sem pressa, no seu tempo.",
+      "Conta o que te incomoda e o que gostaria de mudar — a Dra. Letícia responde pessoalmente, sem roteiro pronto.",
   },
   {
     number: 2,
-    title: "Avaliação facial detalhada",
+    title: "Avaliação presencial",
     description:
-      "Uma análise técnica do seu rosto, identificando o que realmente vai valorizar sua beleza natural.",
+      "Um exame detalhado do seu rosto, ouvindo suas referências antes de sugerir qualquer técnica.",
   },
   {
     number: 3,
-    title: "Plano sob medida",
+    title: "Plano explicado em detalhe",
     description:
-      "Um plano de tratamento individualizado, explicado com clareza antes de qualquer procedimento.",
+      "Você entende cada procedimento sugerido, o porquê dele e o que esperar — antes de decidir seguir.",
   },
   {
     number: 4,
-    title: "Acompanhamento contínuo",
+    title: "Resultado acompanhado",
     description:
-      "Retornos e ajustes ao longo do processo, garantindo que o resultado continue natural e seguro.",
+      "Retornos combinados com você para ajustar o que for preciso, mantendo a naturalidade a cada etapa.",
   },
 ];

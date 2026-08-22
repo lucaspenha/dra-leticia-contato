@@ -1,10 +1,11 @@
-// Conteúdo da seção Hero (`#inicio`) — textos reais, ver docs/prompt-novo-projeto.md seção 5.1.
+// Conteúdo da seção Hero (`#inicio`) — capítulo 01 da trilha narrativa.
 export const hero = {
-  eyebrow: "Harmonização Facial & Odontologia Estética",
-  title: "Sua beleza natural,",
-  titleEmphasis: "elevada com sutileza.",
+  title: "Cada detalhe do seu rosto",
+  titleEmphasis: "conta uma história única.",
   subtitle:
-    "Botox, preenchimentos, bioestimuladores de colágeno e skinbooster pensados para a sua individualidade. Aqui você entende tudo o que será feito, com calma — e um cafézinho esperando por você.",
+    "Harmonização facial e odontologia estética pensadas para a sua individualidade. A seguir, cada capítulo desta página mostra como funciona uma avaliação com a Dra. Letícia — sem pressa, com clareza, até você decidir o próximo passo no WhatsApp.",
+  ctaLabel: "Começar avaliação",
+  secondaryLabel: "Ver procedimentos",
   image: {
     src: "/images/dra-leticia.png",
     alt: "Dra. Letícia Contato, especialista em odontologia e harmonização facial",

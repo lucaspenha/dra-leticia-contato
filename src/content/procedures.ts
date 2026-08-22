@@ -1,9 +1,8 @@
-// Conteúdo da seção Procedimentos (`#procedimentos`) — 7 cards (seção 5.1).
+// Conteúdo da seção Procedimentos (`#procedimentos`) — capítulo 02 da trilha narrativa.
 export const procedimentosSection = {
-  eyebrow: "Procedimentos",
-  title: "Cada rosto é único —",
-  titleEmphasis: "o seu tratamento também é.",
-  lead: "Uma combinação de técnicas pensada para valorizar a sua individualidade, com resultados sutis e naturais.",
+  title: "Um roteiro de tratamentos",
+  titleEmphasis: "escrito para o seu rosto.",
+  lead: "Seis caminhos possíveis, combinados com critério — nunca em série. Conte o que te incomoda e a Dra. Letícia indica a combinação certa para você.",
 };
 
 export type Procedure = {

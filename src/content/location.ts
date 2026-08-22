@@ -1,9 +1,8 @@
-// Conteúdo da seção de Localização (`#localizacao`) — seção 5.1.
+// Conteúdo da seção de Localização (`#localizacao`) — capítulo 07 da trilha narrativa.
 // Endereços/telefones vêm de `lib/site-config.ts` (única fonte de verdade).
 export const localizacaoSection = {
-  eyebrow: "Onde atendemos",
-  title: "Onde você encontra",
-  titleEmphasis: "a Dra. Letícia.",
-  ctaLabel: "Agendar minha visita",
-  whatsappContext: "localizacao:agendar-visita",
+  title: "Três endereços,",
+  titleEmphasis: "uma mesma escuta.",
+  ctaLabel: "Combinar minha visita",
+  whatsappContext: "localizacao:combinar-visita",
 } as const;

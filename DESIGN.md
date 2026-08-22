@@ -166,6 +166,10 @@ A single centered container (max-width 1180px, fluid horizontal padding `clamp(2
 
 Custom breakpoints: `sm: 600px`, `md: 900px`, `lg: 1024px`, `xl: 1280px` (not Tailwind's defaults).
 
+### Signature Structure: NarrativeRail (consultation chapter rail)
+
+On `md+`, the page replaces a conventional top nav with a fixed left rail (`w-64`/`lg:w-72`, `bg-forest-900`) listing the page's 8 sections as numbered "chapters" (`01 Início` … `08 Dúvidas`), reusing the Meaningful Numeral convention for a genuinely ordered, countable list. A `useActiveSection` scrollspy (`IntersectionObserver`, `rootMargin: "-15% 0px -55% 0px"`) highlights the current chapter with a subtle `bg-cream-50/8` pill — never a colored side-border tab, which reads as an AI-slop tell. A gold WhatsApp pill is pinned to the rail's own foot, always reachable regardless of scroll depth. Content is offset with `md:pl-64 lg:pl-72`. Below `md`, the rail collapses into a slim sticky top bar (`MobileChapterBar`) showing the current chapter number/label and a thin progress fill; the floating round WhatsApp button (otherwise `md:hidden`) covers the CTA role there instead. `html { scroll-behavior: smooth }` (overridden to `auto` under `prefers-reduced-motion`) is required so the rail's anchor links animate through intermediate scroll positions rather than jumping instantly.
+
 ## Elevation & Depth
 
 The system is mostly flat — text blocks, the treatment-menu list, and dark section backgrounds carry no shadow. Depth is reserved for two things: photographic containers (soft ambient shadow, grounding the image against the page) and buttons (a matching soft or gold-tinted shadow that reinforces the CTA as the one liftable object on the page).

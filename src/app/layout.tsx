@@ -41,21 +41,26 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-// Contrato de direção do redesign (seed a2c1b031) — precisa sobreviver como
-// comentário HTML real no markup emitido (JSX {/* */} é apagado no build).
+// Contrato de direção do rebuild "Trilha narrativa" (seed 11afceab) — precisa
+// sobreviver como comentário HTML real no markup emitido (JSX {/* */} é apagado no build).
 const DIRECTION_CONTRACT_HTML = `<!--
-  THESIS: every section reads like a page from a boutique atelier's lookbook — large
-  image-led moments and an editorial treatment menu, refusing the centered-hero-plus-
-  icon-grid template the category defaults to.
-  OWN-WORLD: forest/gold/cream palette and logo unchanged; Playfair Display headlines
-  (replacing Cormorant Garamond) + Manrope body; boutique menu rules, asymmetric
-  image-led grids, thin gold dividers, editorial numerals.
-  STORY: a prospective patient reads the practice as a considered atelier, understands
-  the treatment menu at a glance, and books an avaliação on WhatsApp.
-  FIRST VIEWPORT: asymmetric split hero — a large bleed portrait of Dra. Letícia on one
-  side, eyebrow/title/subtitle/CTAs on the other, no card shell.
-  FORM: Atelier lookbook — dealt card (index 5) of 7 grounded structural candidates,
-  seed a2c1b031, chosen over the rolled lead (agenda ledger) and garden path.
+  THESIS: the page is one continuous consultation narrative read against a fixed
+  chapter rail, refusing the atelier's previous stacked-sections-with-a-floating-
+  button template in favor of a spine the visitor always sees themselves inside.
+  OWN-WORLD: forest/gold/cream palette, logo, and real photography unchanged from
+  DESIGN.md; Playfair Display + Manrope unchanged; the rail reuses the Meaningful
+  Numeral convention (serif italic gold numerals) for its 8 chapters, with a
+  WhatsApp pill pinned to the rail's own foot instead of a floating button.
+  STORY: a prospective patient always knows which chapter of the consultation she
+  is in, reaches proof (procedures, results, testimonials) without losing her
+  place, and reaches WhatsApp from the rail at any scroll depth.
+  FIRST VIEWPORT: hero keeps its bleed portrait split, now offset by the rail's
+  first chapter (01 · Início) already highlighted at rest, rail's WhatsApp pill
+  visible from the first frame.
+  FORM: Trilha narrativa fixa — dealt card (index 4) of 7 grounded structural
+  candidates, seed 11afceab, chosen over the dealt dossiê-editorial and
+  duas-colunas-persistente alternates and IMPECCABLE'S PICK (espinha de prova
+  social); six catalog challengers declined on audience identification.
   FINISH: unreviewed and undocumented is unfinished; this build ends with the finish
   review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 -->`;

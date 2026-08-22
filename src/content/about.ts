@@ -1,20 +1,19 @@
-// Conteúdo da seção Sobre (`#sobre`) — bio, citação e diferenciais (seção 5.1).
+// Conteúdo da seção Sobre (`#sobre`) — capítulo 05 da trilha narrativa.
 export const sobreSection = {
-  eyebrow: "Quem cuida da sua harmonização",
-  title: "Sutileza para revelar",
-  titleEmphasis: "a melhor versão de você.",
+  title: "Uma dentista que",
+  titleEmphasis: "escuta antes de sugerir.",
   paragraphs: [
-    "A Dra. Letícia Contato é especialista em harmonizar faces de acordo com a individualidade, as vontades e a personalidade de cada paciente.",
-    "Trabalha com Botox, preenchimentos, bioestimuladores de colágeno, fios, skinbooster e PDRN, sempre combinando técnicas de forma personalizada para resultados naturais.",
+    "A Dra. Letícia Contato dedica cada consulta a entender a sua individualidade antes de pensar em qualquer procedimento — o objetivo nunca é seguir uma tendência, é valorizar quem você já é.",
+    "Atua com Botox, preenchimentos, bioestimuladores de colágeno, fios, skinbooster e PDRN, combinando técnicas sob medida para resultados discretos e naturais.",
   ],
   quote: "Você não precisa de harmonização facial — você MERECE.",
   differentiators: [
-    "Especialista em Harmonização Facial",
-    "Atendimento individualizado, sem pressa",
-    "Explicação clara de cada etapa do tratamento",
+    "Harmonização facial personalizada, nunca padronizada",
+    "Atendimento sem pressa, no seu tempo",
+    "Cada etapa explicada antes de acontecer",
   ],
-  ctaLabel: "Agendar minha avaliação",
-  whatsappContext: "sobre:agendar-avaliacao",
+  ctaLabel: "Marcar minha avaliação",
+  whatsappContext: "sobre:marcar-avaliacao",
   photo: {
     src: "/images/dra-leticia.png",
     alt: "Dra. Letícia Contato em seu consultório",

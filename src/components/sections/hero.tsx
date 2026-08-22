@@ -10,7 +10,11 @@ export function Hero() {
     >
       <div className="relative mx-auto grid max-w-295 grid-cols-1 md:grid-cols-[1.05fr_1fr] md:items-stretch">
         <div className="flex flex-col items-center gap-8 px-[clamp(20px,5vw,48px)] py-[clamp(48px,6vw,96px)] text-center md:items-start md:py-[clamp(64px,8vw,140px)] md:text-left">
-          <a href="#inicio" aria-label="Dra. Letícia Contato — página inicial">
+          <a
+            href="#inicio"
+            aria-label="Dra. Letícia Contato — página inicial"
+            className="md:hidden"
+          >
             <Image
               src="/images/logo.png"
               alt="Dra. Letícia Contato — Odontologia & Harmonização Facial"
@@ -28,20 +32,20 @@ export function Hero() {
 
           <p className="text-cream-100/90 max-w-lg text-lg">{hero.subtitle}</p>
 
-          <div className="flex flex-col items-center gap-4 sm:flex-row">
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap md:justify-start">
             <WhatsAppButton
-              context="hero:agendar-avaliacao"
+              context="hero:comecar-avaliacao"
               location="hero"
               variant="gold"
-              size="xl"
+              size="lg"
             >
-              Agendar avaliação
+              {hero.ctaLabel}
             </WhatsAppButton>
             <a
               href="#procedimentos"
-              className="border-cream-50/30 text-cream-50 hover:bg-cream-50/10 inline-flex items-center justify-center rounded-full border px-8 py-4 text-lg font-semibold transition-colors"
+              className="border-cream-50/30 text-cream-50 hover:bg-cream-50/10 inline-flex items-center justify-center rounded-full border px-6 py-3.5 text-base font-semibold whitespace-nowrap transition-colors"
             >
-              Ver procedimentos
+              {hero.secondaryLabel}
             </a>
           </div>
         </div>

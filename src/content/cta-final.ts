@@ -1,9 +1,8 @@
-// Conteúdo do CTA final (`#contato`) — seção 5.1.
+// Conteúdo do CTA final (`#contato`) — fecho da trilha narrativa.
 export const ctaFinalSection = {
-  eyebrow: "Dê o primeiro passo",
-  title: "Você não precisa —",
-  titleEmphasis: "você merece.",
-  text: "Fale agora com a Dra. Letícia pelo WhatsApp e receba um plano claro para o seu caso. Sem compromisso.",
+  title: "Seu capítulo",
+  titleEmphasis: "começa com um oi.",
+  text: "Fale agora com a Dra. Letícia pelo WhatsApp e receba orientação clara sobre o seu caso. Sem compromisso, no seu tempo.",
   buttonLabel: "Chamar no WhatsApp",
   microtext: "Resposta rápida em horário comercial",
   whatsappContext: "cta-final:chamar-no-whatsapp",

@@ -1,15 +1,15 @@
-// Conteúdo do Footer — seção 5.1.
+// Conteúdo do Footer — mesmos capítulos da trilha narrativa, para quem chega direto ao fim.
 export const footerContent = {
   wordmark: "Dra. Letícia Contato",
   tagline: "Odontologia & Harmonização Facial",
-  phrase: "Sua beleza natural, elevada com sutileza.",
+  phrase: "Cada consulta, um capítulo pensado só para você.",
   nav: [
     { label: "Procedimentos", href: "#procedimentos" },
     { label: "Resultados", href: "#resultados" },
     { label: "Como funciona", href: "#como-funciona" },
-    { label: "A dentista", href: "#sobre" },
+    { label: "A Dra. Letícia", href: "#sobre" },
     { label: "Depoimentos", href: "#depoimentos" },
-    { label: "Localização", href: "#localizacao" },
+    { label: "Unidades", href: "#localizacao" },
     { label: "Dúvidas", href: "#faq" },
   ],
   whatsappLabel: "Falar no WhatsApp",
