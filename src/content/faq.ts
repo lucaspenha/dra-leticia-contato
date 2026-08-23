@@ -1,32 +1,32 @@
-// Conteúdo da seção FAQ (`#faq`) — 4 perguntas em acordeão (seção 5.1).
+// Conteúdo da seção FAQ (`#faq`) — migrado do app de referência (Replit).
 export const faqSection = {
-  eyebrow: "Antes de decidir",
-  title: "As dúvidas que",
-  titleEmphasis: "todo mundo tem.",
-  ctaText: "Ficou com outra dúvida? Fale direto com a Dra. Letícia.",
-  ctaLabel: "Tirar minha dúvida no WhatsApp",
-  whatsappContext: "faq:tirar-duvida",
-};
+  eyebrow: "Perguntas frequentes",
+  title: "Antes de",
+  titleEmphasis: "começarmos.",
+  lead: "Ainda ficou com alguma dúvida? Vamos conversar.",
+  ctaLabel: "Falar pelo WhatsApp",
+  whatsappContext: "faq:falar-pelo-whatsapp",
+} as const;
 
 export const faqItems = [
   {
-    question: "Existe idade certa para começar a harmonização facial?",
+    question: "Como funciona a primeira consulta?",
     answer:
-      "Não existe uma idade fixa — cada avaliação é individual. O que importa é entender o que te incomoda e se o procedimento faz sentido para o seu momento e objetivo.",
+      "Esse é o momento de conversar com calma, entender o que incomoda você e avaliar seu rosto de forma individualizada. Ao final, apresento as possibilidades e um plano de cuidado que faça sentido para a sua rotina.",
   },
   {
-    question: "O resultado fica natural ou muda muito o meu rosto?",
+    question: "Os resultados ficam naturais?",
     answer:
-      "O objetivo é sempre valorizar suas características, nunca mudar quem você é. Os procedimentos são pensados para resultados sutis e naturais.",
+      "Sim. Naturalidade é o ponto de partida de todo o nosso trabalho. Usamos técnica e quantidade adequadas para preservar seus traços e sua expressão.",
   },
   {
-    question: "Qual a diferença entre Botox, preenchimento e bioestimulador?",
+    question: "Qual tratamento é ideal para mim?",
     answer:
-      "O Botox suaviza rugas de expressão relaxando a musculatura. O preenchimento devolve volume com ácido hialurônico. Já o bioestimulador estimula a produção natural de colágeno ao longo do tempo. Na consulta, avaliamos juntas qual combinação faz sentido para você.",
+      "Não existe uma resposta pronta. A indicação depende da sua anatomia, dos seus objetivos e de uma avaliação cuidadosa. Por isso, o plano é sempre personalizado.",
   },
   {
-    question: "Quero entender o valor antes de decidir.",
+    question: "Atende em quais cidades?",
     answer:
-      "Os valores variam de acordo com o plano de tratamento individualizado. Fale com a Dra. Letícia pelo WhatsApp para receber informações claras sobre o seu caso, sem compromisso.",
+      "Atendemos em Araxá, Perdizes e Ribeirão Preto. Fale pelo WhatsApp para encontrar o melhor endereço e horário para você.",
   },
 ] as const;

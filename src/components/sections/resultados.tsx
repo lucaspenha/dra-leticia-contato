@@ -1,47 +1,82 @@
-import { GalleryCard } from "@/components/ui/gallery-card";
+import { Check, Star } from "lucide-react";
+import Image from "next/image";
+
 import { Reveal } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
-import { SectionTitle } from "@/components/ui/section-title";
-import { galleryItems, resultadosSection } from "@/content/gallery";
-
-// Vitrine assimétrica: o primeiro item vira destaque em largura total; o par
-// antes/depois ganha o dobro do espaço para cada foto respirar.
-const spanClassName: Record<string, string> = {
-  "harmonizacao-perfil": "sm:col-span-2 md:col-span-3",
-  "lipo-papada": "sm:col-span-2",
-};
-
-const aspectClassName: Record<string, string> = {
-  "harmonizacao-perfil": "aspect-[16/10]",
-};
+import { WhatsAppLink } from "@/components/whatsapp-link";
+import { resultsSection } from "@/content/results";
 
 export function Resultados() {
   return (
-    <Section id="resultados" className="bg-cream-100">
-      <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
-        <SectionTitle emphasis={resultadosSection.titleEmphasis}>
-          {resultadosSection.title}
-        </SectionTitle>
-        <p className="text-ink-500 max-w-2xl text-lg">{resultadosSection.lead}</p>
+    <Section id="resultados" className="bg-forest-700 text-cream-50">
+      <div className="flex flex-col justify-between gap-8 lg:flex-row lg:items-end">
+        <div>
+          <p className="text-gold-300 text-[.67rem] font-semibold tracking-[0.22em] uppercase">
+            {resultsSection.eyebrow}
+          </p>
+          <h2 className="font-display mt-5 max-w-[600px] text-[clamp(2.8rem,5vw,5.2rem)] leading-[.95] tracking-[-0.05em]">
+            {resultsSection.title}
+            <br />
+            <em className="text-gold-300 italic">{resultsSection.titleEmphasis}</em>
+          </h2>
+        </div>
+        <div className="text-gold-300 flex items-center gap-3">
+          <Star size={14} fill="currentColor" />
+          <span className="text-[11px] tracking-[0.16em] uppercase">{resultsSection.tagline}</span>
+        </div>
       </div>
 
-      <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
-        {galleryItems.map((item, index) => (
-          <Reveal key={item.id} delay={index * 60} className={spanClassName[item.id]}>
-            <GalleryCard
-              title={item.title}
-              label={item.label}
-              image={item.image}
-              pair={item.pair}
-              aspectClassName={aspectClassName[item.id]}
-            />
-          </Reveal>
-        ))}
-      </div>
+      <div className="mt-16 grid gap-8 lg:grid-cols-[1.15fr_.85fr]">
+        <Reveal className="rounded-brand relative min-h-[380px] overflow-hidden">
+          <Image
+            src={resultsSection.showcase.image.src}
+            alt={resultsSection.showcase.image.alt}
+            fill
+            sizes="(min-width: 1024px) 55vw, 100vw"
+            className="object-cover"
+          />
+          <div
+            aria-hidden
+            className="from-forest-900/70 absolute inset-0 bg-linear-to-t to-transparent"
+          />
+          <div className="bg-cream-50/85 text-forest-700 absolute bottom-5 left-5 px-4 py-3">
+            <span className="text-gold-600 text-[.67rem] font-semibold tracking-[0.22em] uppercase">
+              {resultsSection.showcase.caseLabel}
+            </span>
+            <p className="mt-1 text-[11px]">{resultsSection.showcase.caseTitle}</p>
+          </div>
+          <div className="border-cream-50/30 text-cream-50 absolute top-5 right-5 rounded-full border px-3 py-2 text-[9px] tracking-[0.12em] uppercase">
+            {resultsSection.showcase.badge}
+          </div>
+        </Reveal>
 
-      <p className="text-ink-500 mt-8 text-center text-sm md:text-left">
-        {resultadosSection.footnote}
-      </p>
+        <Reveal
+          delay={80}
+          className="border-gold-300/25 flex flex-col justify-between border p-7 lg:p-10"
+        >
+          <div>
+            <div className="text-gold-300 flex items-center gap-2">
+              <Check size={16} />
+              <span className="text-[.67rem] font-semibold tracking-[0.22em] uppercase">
+                {resultsSection.quoteLabel}
+              </span>
+            </div>
+            <p className="font-display mt-8 text-3xl leading-tight lg:text-4xl">
+              &ldquo;{resultsSection.quote}&rdquo;
+            </p>
+            <p className="text-cream-100/70 mt-6 text-[13px] leading-6">
+              {resultsSection.quoteText}
+            </p>
+          </div>
+          <WhatsAppLink
+            context={resultsSection.whatsappContext}
+            location="resultados"
+            className="border-gold-300 text-gold-300 mt-10 self-start"
+          >
+            {resultsSection.ctaLabel}
+          </WhatsAppLink>
+        </Reveal>
+      </div>
     </Section>
   );
 }

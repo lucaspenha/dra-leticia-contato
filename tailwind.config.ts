@@ -1,43 +1,37 @@
 import type { Config } from "tailwindcss";
 
-// Design tokens extraídos do site atual (ver docs/prompt-novo-projeto.md, seção 3).
+// Design tokens migrados do app de referência (github.com/lucaspenha/dra-leticia-contato-replit).
 const config: Config = {
   theme: {
     extend: {
       colors: {
         forest: {
-          900: "#04241A",
-          800: "#06301F",
-          700: "#03422F",
-          600: "#054D37",
-          line: "rgba(211,171,132,0.22)",
-        },
-        green: {
-          300: "#8FDCC0",
-          400: "#4FC79A",
-          500: "#02A56D",
-          600: "#028C5C",
+          900: "#183b2b",
+          800: "#1f4433",
+          700: "#28503d",
+          600: "#33604a",
+          line: "rgba(207,183,119,0.25)",
         },
         gold: {
-          200: "#F2E3D2",
-          300: "#E7CBAE",
-          500: "#D3AB84",
-          600: "#BE9066",
-          700: "#A97A50",
+          200: "#f2e6c9",
+          300: "#d8bf83",
+          500: "#cfb777",
+          600: "#a3884b",
+          700: "#8a6f3d",
         },
         cream: {
-          50: "#FBF8F3",
-          100: "#F4EDE2",
-          200: "#E9DFCF",
+          50: "#f5efdf",
+          100: "#e9e2d1",
+          200: "#e8dfce",
         },
         ink: {
-          900: "#191D1A",
-          700: "#3A423C",
-          500: "#6B756E",
+          900: "#28503d",
+          700: "#3a4a3f",
+          500: "#536258",
         },
         wa: {
-          green: "#25D366",
-          "green-d": "#1ebe5a",
+          green: "#278b4e",
+          "green-d": "#1f753f",
         },
       },
       fontFamily: {
@@ -45,16 +39,16 @@ const config: Config = {
         body: ["var(--font-body)", "system-ui", "-apple-system", "sans-serif"],
       },
       backgroundImage: {
-        "green-grad": "linear-gradient(135deg,#03422F 0%,#02A56D 55%,#4FC79A 100%)",
-        "gold-grad": "linear-gradient(135deg,#A97A50 0%,#D3AB84 55%,#F2E3D2 100%)",
+        "green-grad": "linear-gradient(135deg,#183b2b 0%,#28503d 100%)",
+        "gold-grad": "linear-gradient(135deg,#a3884b 0%,#cfb777 55%,#f2e6c9 100%)",
       },
       borderRadius: {
         brand: "22px",
         "brand-sm": "14px",
       },
       boxShadow: {
-        soft: "0 20px 55px -22px rgba(4,36,26,0.5)",
-        gold: "0 14px 40px -14px rgba(190,144,102,0.55)",
+        soft: "0 20px 55px -22px rgba(24,59,43,0.5)",
+        gold: "0 14px 40px -14px rgba(163,136,75,0.55)",
       },
       transitionTimingFunction: {
         brand: "cubic-bezier(0.22, 1, 0.36, 1)",
@@ -67,9 +61,9 @@ const config: Config = {
       },
       keyframes: {
         "wa-pulse": {
-          "0%": { boxShadow: "0 0 0 0 rgba(37,211,102,0.55)" },
-          "70%": { boxShadow: "0 0 0 14px rgba(37,211,102,0)" },
-          "100%": { boxShadow: "0 0 0 0 rgba(37,211,102,0)" },
+          "0%": { boxShadow: "0 0 0 0 rgba(39,139,78,0.55)" },
+          "70%": { boxShadow: "0 0 0 14px rgba(39,139,78,0)" },
+          "100%": { boxShadow: "0 0 0 0 rgba(39,139,78,0)" },
         },
         "accordion-down": {
           from: { height: "0" },

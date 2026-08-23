@@ -2,13 +2,17 @@
 @config "../../tailwind.config.ts";
 
 :root {
-  --background: #fbf8f3;
-  --foreground: #191d1a;
+  --background: #f5efdf;
+  --foreground: #28503d;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
@@ -37,6 +41,6 @@ body {
 }
 
 :focus-visible {
-  outline: 2px solid #d3ab84;
+  outline: 2px solid #cfb777;
   outline-offset: 2px;
 }

@@ -1,26 +1,35 @@
 import { Reveal } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
-import { SectionTitle } from "@/components/ui/section-title";
-import { WhatsAppButton } from "@/components/whatsapp-button";
 import { FaqAccordion } from "@/components/faq-item";
+import { WhatsAppLink } from "@/components/whatsapp-link";
 import { faqItems, faqSection } from "@/content/faq";
 
 export function Faq() {
   return (
     <Section id="faq" className="bg-cream-50">
-      <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
-        <SectionTitle emphasis={faqSection.titleEmphasis}>{faqSection.title}</SectionTitle>
-      </div>
+      <div className="grid gap-12 lg:grid-cols-[.7fr_1.3fr]">
+        <div>
+          <p className="text-gold-600 text-[.67rem] font-semibold tracking-[0.22em] uppercase">
+            {faqSection.eyebrow}
+          </p>
+          <h2 className="font-display text-forest-700 mt-5 text-5xl leading-[.98] tracking-[-0.04em]">
+            {faqSection.title}
+            <br />
+            <em className="italic">{faqSection.titleEmphasis}</em>
+          </h2>
+          <p className="text-ink-500 mt-7 max-w-[260px] text-[13px] leading-6">{faqSection.lead}</p>
+          <WhatsAppLink
+            context={faqSection.whatsappContext}
+            location="faq"
+            className="text-forest-700 mt-7"
+          >
+            {faqSection.ctaLabel}
+          </WhatsAppLink>
+        </div>
 
-      <Reveal className="mx-auto mt-10 max-w-3xl">
-        <FaqAccordion items={[...faqItems]} />
-      </Reveal>
-
-      <div className="mt-10 flex flex-col items-center gap-4 text-center">
-        <p className="text-ink-700 text-lg">{faqSection.ctaText}</p>
-        <WhatsAppButton context={faqSection.whatsappContext} location="faq" variant="gold">
-          {faqSection.ctaLabel}
-        </WhatsAppButton>
+        <Reveal delay={80} className="border-forest-700/20 border-t">
+          <FaqAccordion items={[...faqItems]} />
+        </Reveal>
       </div>
     </Section>
   );

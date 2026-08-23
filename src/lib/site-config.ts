@@ -10,33 +10,31 @@ export type Location = {
 };
 
 export const siteConfig = {
-  whatsappNumber: "5516997939679", // número único, compartilhado pelas 3 unidades
-  defaultMessage: "Olá! Vim pelo site da Dra. Letícia Contato e gostaria de mais informações.",
+  // TODO: dados de demonstração migrados do repo de referência (Replit) —
+  // substituir por número/mensagem reais da cliente antes de publicar.
+  whatsappNumber: "5516999998877",
+  defaultMessage: "Olá, gostaria de agendar uma consulta com a Dra. Letícia.",
   socials: {
-    // TODO: pendente — confirmar usuário do Instagram com a cliente antes de publicar.
     instagram: "https://instagram.com/",
   },
   locations: [
     {
       id: "araxa",
-      label: "Araxá – MG",
-      address: "Av. Antônio Carlos, 286 — Centro, Araxá – MG · 38183-083",
-      mapsQuery: "Av. Antônio Carlos, 286 - Centro, Araxá - MG, 38183-083",
-      phone: "(16) 99793-9679",
+      label: "Araxá",
+      address: "Rua Presidente Olegário Maciel, 198",
+      mapsQuery: "Rua Presidente Olegário Maciel, 198, Araxá - MG",
     },
     {
       id: "perdizes",
-      label: "Perdizes – MG",
-      // TODO: pendente — CEP e telefone ainda não informados pela cliente.
-      address: "Rua Antônio Tomé de Resende, 276",
-      mapsQuery: "Rua Antônio Tomé de Resende, 276, Perdizes - MG",
+      label: "Perdizes",
+      address: "Rua Cardoso de Almeida, 1.620",
+      mapsQuery: "Rua Cardoso de Almeida, 1620, Perdizes, São Paulo - SP",
     },
     {
       id: "ribeirao-preto",
-      label: "Ribeirão Preto – SP",
-      // TODO: pendente — número, CEP e telefone ainda não informados pela cliente.
-      address: "Av. Antônio Diederichsen — Metropolitan Business Center",
-      mapsQuery: "Av. Antônio Diederichsen, Metropolitan Business Center, Ribeirão Preto - SP",
+      label: "Ribeirão Preto",
+      address: "Av. Independência, 2.890",
+      mapsQuery: "Av. Independência, 2890, Ribeirão Preto - SP",
     },
   ] satisfies Location[],
 } as const;

@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       "Botox, preenchimentos, bioestimuladores de colágeno e skinbooster com a Dra. Letícia Contato.",
     start_url: "/",
     display: "standalone",
-    background_color: "#FBF8F3",
-    theme_color: "#03422F",
+    background_color: "#F5EFDF",
+    theme_color: "#183B2B",
     icons: [
       { src: "/icon.png", sizes: "256x256", type: "image/png" },
       { src: "/apple-icon.png", sizes: "180x180", type: "image/png" },

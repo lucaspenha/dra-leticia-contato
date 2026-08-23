@@ -9,8 +9,6 @@ import { TestimonialCard } from "@/components/ui/testimonial-card";
 
 type Testimonial = {
   name: string;
-  reviewCount: string;
-  timeAgo: string;
   text: string;
 };
 
