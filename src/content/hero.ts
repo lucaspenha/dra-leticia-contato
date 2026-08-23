@@ -1,9 +1,10 @@
-// Conteúdo da seção Hero (`#inicio`) — capítulo 01 da trilha narrativa.
+// Conteúdo da seção Hero (`#inicio`) — a mensagem de abertura da conversa.
 export const hero = {
+  statusLabel: "Dra. Letícia · online agora",
   title: "Cada detalhe do seu rosto",
   titleEmphasis: "conta uma história única.",
   subtitle:
-    "Harmonização facial e odontologia estética pensadas para a sua individualidade. A seguir, cada capítulo desta página mostra como funciona uma avaliação com a Dra. Letícia — sem pressa, com clareza, até você decidir o próximo passo no WhatsApp.",
+    "Harmonização facial e odontologia estética pensadas para a sua individualidade. Manda sua dúvida e a Dra. Letícia responde pessoalmente — sem roteiro pronto, sem pressa, até você decidir o próximo passo.",
   ctaLabel: "Começar avaliação",
   secondaryLabel: "Ver procedimentos",
   image: {

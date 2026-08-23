@@ -1,4 +1,5 @@
 import { ProcessStep } from "@/components/ui/process-step";
+import { PromptBubble } from "@/components/ui/prompt-bubble";
 import { Reveal } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
 import { SectionTitle } from "@/components/ui/section-title";
@@ -9,6 +10,9 @@ export function ComoFunciona() {
   return (
     <Section id="como-funciona" className="bg-cream-50">
       <div className="mx-auto flex max-w-2xl flex-col items-center gap-4 text-center">
+        <PromptBubble align="center" className="mx-auto">
+          {comoFuncionaSection.question}
+        </PromptBubble>
         <SectionTitle center emphasis={comoFuncionaSection.titleEmphasis}>
           {comoFuncionaSection.title}
         </SectionTitle>

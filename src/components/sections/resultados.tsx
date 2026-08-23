@@ -1,4 +1,5 @@
 import { GalleryCard } from "@/components/ui/gallery-card";
+import { PromptBubble } from "@/components/ui/prompt-bubble";
 import { Reveal } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
 import { SectionTitle } from "@/components/ui/section-title";
@@ -19,6 +20,7 @@ export function Resultados() {
   return (
     <Section id="resultados" className="bg-cream-100">
       <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
+        <PromptBubble>{resultadosSection.question}</PromptBubble>
         <SectionTitle emphasis={resultadosSection.titleEmphasis}>
           {resultadosSection.title}
         </SectionTitle>

@@ -8,14 +8,21 @@ type FaqItemData = {
   answer: string;
 };
 
-/** Acordeão de FAQ acessível (Radix), com ícone "+" que gira para "×". */
+/**
+ * FAQ como uma sequência de trocas reais: cada pergunta abre como bolha de
+ * mensagem recebida; a resposta aparece como a réplica da Dra. Letícia logo abaixo.
+ */
 export function FaqAccordion({ items }: { items: FaqItemData[] }) {
   return (
-    <Accordion.Root type="single" collapsible className="divide-forest-line flex flex-col divide-y">
+    <Accordion.Root type="single" collapsible className="flex flex-col gap-3">
       {items.map((item, index) => (
-        <Accordion.Item key={item.question} value={`item-${index}`} className="py-2">
+        <Accordion.Item
+          key={item.question}
+          value={`item-${index}`}
+          className="border-cream-200 bg-cream-50 rounded-brand-sm border"
+        >
           <Accordion.Header>
-            <Accordion.Trigger className="group font-display text-forest-900 hover:text-forest-700 flex w-full items-center justify-between gap-4 py-4 text-left text-lg font-semibold transition-colors">
+            <Accordion.Trigger className="group font-display text-forest-900 hover:text-forest-700 flex w-full items-center justify-between gap-4 px-6 py-5 text-left text-lg font-semibold transition-colors">
               {item.question}
               <Plus
                 aria-hidden
@@ -24,7 +31,9 @@ export function FaqAccordion({ items }: { items: FaqItemData[] }) {
             </Accordion.Trigger>
           </Accordion.Header>
           <Accordion.Content className="text-ink-500 data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden">
-            <p className="pb-4 leading-relaxed">{item.answer}</p>
+            <div className="border-cream-200 mx-4 mb-4 rounded-[14px] rounded-tl-sm border-t px-5 pt-4">
+              <p className="leading-relaxed">{item.answer}</p>
+            </div>
           </Accordion.Content>
         </Accordion.Item>
       ))}

@@ -1,6 +1,6 @@
 import { SectionTitle } from "@/components/ui/section-title";
 import { Reveal } from "@/components/ui/reveal";
-import { WhatsAppButton } from "@/components/whatsapp-button";
+import { WhatsappComposer } from "@/components/whatsapp-composer";
 import { ctaFinalSection } from "@/content/cta-final";
 
 export function CtaFinal() {
@@ -19,14 +19,14 @@ export function CtaFinal() {
             {ctaFinalSection.title}
           </SectionTitle>
           <p className="text-cream-100/90 text-lg">{ctaFinalSection.text}</p>
-          <WhatsAppButton
+
+          <WhatsappComposer
+            placeholder={ctaFinalSection.composerPlaceholder}
+            ariaLabel={ctaFinalSection.buttonLabel}
             context={ctaFinalSection.whatsappContext}
             location="cta-final"
-            variant="green"
-            size="xl"
-          >
-            {ctaFinalSection.buttonLabel}
-          </WhatsAppButton>
+          />
+
           <p className="text-cream-100/70 text-sm">{ctaFinalSection.microtext}</p>
         </Reveal>
       </div>

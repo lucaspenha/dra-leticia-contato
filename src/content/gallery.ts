@@ -1,5 +1,6 @@
-// Conteúdo da seção Galeria/Resultados (`#resultados`) — capítulo 03 da trilha narrativa.
+// Conteúdo da seção Galeria/Resultados (`#resultados`).
 export const resultadosSection = {
+  question: "Dá pra ver resultados reais antes de decidir?",
   title: "Provas de que sutileza",
   titleEmphasis: "também é resultado.",
   lead: "Um recorte real dos procedimentos feitos no consultório — sempre avaliados caso a caso, nunca em série.",

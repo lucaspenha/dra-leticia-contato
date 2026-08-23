@@ -1,3 +1,4 @@
+import { PromptBubble } from "@/components/ui/prompt-bubble";
 import { Reveal } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
 import { SectionTitle } from "@/components/ui/section-title";
@@ -10,6 +11,7 @@ export function Localizacao() {
   return (
     <Section id="localizacao" className="bg-cream-100">
       <div className="flex flex-col items-center gap-4 text-center md:items-start md:text-left">
+        <PromptBubble>{localizacaoSection.question}</PromptBubble>
         <SectionTitle emphasis={localizacaoSection.titleEmphasis}>
           {localizacaoSection.title}
         </SectionTitle>

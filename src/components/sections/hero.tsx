@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { WhatsAppButton } from "@/components/whatsapp-button";
+import { StatusPill } from "@/components/ui/status-pill";
 import { hero } from "@/content/hero";
 
 export function Hero() {
@@ -9,7 +10,7 @@ export function Hero() {
       className="from-forest-600 via-forest-800 to-forest-900 text-cream-50 relative isolate overflow-hidden bg-linear-to-b"
     >
       <div className="relative mx-auto grid max-w-295 grid-cols-1 md:grid-cols-[1.05fr_1fr] md:items-stretch">
-        <div className="flex flex-col items-center gap-8 px-[clamp(20px,5vw,48px)] py-[clamp(48px,6vw,96px)] text-center md:items-start md:py-[clamp(64px,8vw,140px)] md:text-left">
+        <div className="flex flex-col items-center gap-6 px-[clamp(20px,5vw,48px)] py-[clamp(48px,6vw,96px)] text-center md:items-start md:py-[clamp(64px,8vw,140px)] md:text-left">
           <a
             href="#inicio"
             aria-label="Dra. Letícia Contato — página inicial"
@@ -26,11 +27,16 @@ export function Hero() {
             />
           </a>
 
-          <h1 className="font-display text-[clamp(2.5rem,6vw,4rem)] leading-[1.08] font-semibold tracking-[-0.01em]">
-            {hero.title} <em className="text-gold-300 font-medium italic">{hero.titleEmphasis}</em>
-          </h1>
+          <StatusPill light label={hero.statusLabel} />
 
-          <p className="text-cream-100/90 max-w-lg text-lg">{hero.subtitle}</p>
+          <div className="bg-cream-50/8 rounded-brand border-cream-50/10 max-w-xl rounded-tl-sm border px-6 py-7 text-left backdrop-blur-sm sm:px-8 sm:py-8">
+            <h1 className="font-display text-[clamp(2.5rem,6vw,4rem)] leading-[1.08] font-semibold tracking-[-0.01em]">
+              {hero.title}{" "}
+              <em className="text-gold-300 font-medium italic">{hero.titleEmphasis}</em>
+            </h1>
+
+            <p className="text-cream-100/90 mt-5 max-w-lg text-lg">{hero.subtitle}</p>
+          </div>
 
           <div className="flex flex-col items-center gap-4 sm:flex-row sm:flex-wrap md:justify-start">
             <WhatsAppButton

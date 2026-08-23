@@ -1,8 +1,8 @@
-// Conteúdo do Footer — mesmos capítulos da trilha narrativa, para quem chega direto ao fim.
+// Conteúdo do Footer — mesmos tópicos da conversa, para quem chega direto ao fim.
 export const footerContent = {
   wordmark: "Dra. Letícia Contato",
   tagline: "Odontologia & Harmonização Facial",
-  phrase: "Cada consulta, um capítulo pensado só para você.",
+  phrase: "Toda conversa começa com uma escuta de verdade.",
   nav: [
     { label: "Procedimentos", href: "#procedimentos" },
     { label: "Resultados", href: "#resultados" },

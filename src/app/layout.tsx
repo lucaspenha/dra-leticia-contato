@@ -41,26 +41,29 @@ export const viewport: Viewport = {
   viewportFit: "cover",
 };
 
-// Contrato de direção do rebuild "Trilha narrativa" (seed 11afceab) — precisa
+// Contrato de direção do rebuild "A Conversa" (seed c2a1d399) — precisa
 // sobreviver como comentário HTML real no markup emitido (JSX {/* */} é apagado no build).
 const DIRECTION_CONTRACT_HTML = `<!--
-  THESIS: the page is one continuous consultation narrative read against a fixed
-  chapter rail, refusing the atelier's previous stacked-sections-with-a-floating-
-  button template in favor of a spine the visitor always sees themselves inside.
+  THESIS: the page reads as one live WhatsApp exchange with the practice, not a
+  chaptered consultation spine — every section opens on the question a patient
+  would actually send before the answer, refusing the atelier's editorial-menu
+  template in favor of the product's real channel: fast, direct reply.
   OWN-WORLD: forest/gold/cream palette, logo, and real photography unchanged from
-  DESIGN.md; Playfair Display + Manrope unchanged; the rail reuses the Meaningful
-  Numeral convention (serif italic gold numerals) for its 8 chapters, with a
-  WhatsApp pill pinned to the rail's own foot instead of a floating button.
-  STORY: a prospective patient always knows which chapter of the consultation she
-  is in, reaches proof (procedures, results, testimonials) without losing her
-  place, and reaches WhatsApp from the rail at any scroll depth.
-  FIRST VIEWPORT: hero keeps its bleed portrait split, now offset by the rail's
-  first chapter (01 · Início) already highlighted at rest, rail's WhatsApp pill
-  visible from the first frame.
-  FORM: Trilha narrativa fixa — dealt card (index 4) of 7 grounded structural
-  candidates, seed 11afceab, chosen over the dealt dossiê-editorial and
-  duas-colunas-persistente alternates and IMPECCABLE'S PICK (espinha de prova
-  social); six catalog challengers declined on audience identification.
+  DESIGN.md; Playfair Display + Manrope unchanged; the rail keeps the Meaningful
+  Numeral convention but reframes its 8 stops as a read conversation thread with
+  gold check marks, topped by an "online now" status strip; wa-green stays
+  exclusive to real WhatsApp CTAs, never the status dot or bubbles.
+  STORY: a prospective patient sees her own likely question answered immediately
+  in every section, feels the practice is already mid-conversation with her, and
+  ends at a compose bar built to look like she is one tap from sending it for real.
+  FIRST VIEWPORT: hero is staged as the opening message bubble over the forest
+  gradient/portrait split, "Dra. Letícia · online agora" status pill visible at
+  rest, rail's first stop already checked off.
+  FORM: A Conversa (WhatsApp-first) — dealt card (index 3) of 7 grounded structural
+  candidates, seed c2a1d399, chosen over the dealt gallery-first and
+  cardápio-boutique alternates; six catalog challengers (BBS terminal, VU-meter
+  bridge, silk canopy, glaze shelf, airport wayfinding, wood-type manifesto)
+  declined on audience identification.
   FINISH: unreviewed and undocumented is unfinished; this build ends with the finish
   review, the verdict, DESIGN.md, and every shipping raster carrying its provenance.
 -->`;

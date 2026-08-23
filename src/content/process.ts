@@ -1,9 +1,10 @@
-// Conteúdo da seção Como funciona (`#como-funciona`) — capítulo 04 da trilha narrativa.
+// Conteúdo da seção Como funciona (`#como-funciona`).
 export const comoFuncionaSection = {
+  question: "Como funciona da primeira mensagem até o resultado?",
   title: "Da primeira mensagem",
   titleEmphasis: "ao resultado que é só seu.",
   lead: "Quatro etapas, sempre nessa ordem, sempre no seu tempo — para você chegar ao consultório já sabendo exatamente o que esperar.",
-  ctaLabel: "Começar pelo capítulo 1",
+  ctaLabel: "Mandar minha primeira mensagem",
   whatsappContext: "como-funciona:comecar-avaliacao",
 };
 

@@ -1,5 +1,6 @@
-// Conteúdo da seção Sobre (`#sobre`) — capítulo 05 da trilha narrativa.
+// Conteúdo da seção Sobre (`#sobre`).
 export const sobreSection = {
+  question: "Quem é a Dra. Letícia?",
   title: "Uma dentista que",
   titleEmphasis: "escuta antes de sugerir.",
   paragraphs: [
