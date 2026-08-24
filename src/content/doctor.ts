@@ -12,7 +12,7 @@ export const doctorSection = {
     { value: "3", label: "cidades para cuidar" },
   ],
   photo: {
-    src: "/images/portrait-leticia.jpeg",
+    src: "/images/portrait-leticia.jpg",
     alt: "Dra. Letícia em seu consultório",
     caption: {
       line1: "com calma,",
