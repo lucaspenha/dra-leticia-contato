@@ -6,11 +6,11 @@ export const resultsSection = {
   tagline: "Naturalidade em primeiro lugar",
   showcase: {
     image: {
-      src: "/images/still-life.jpg",
-      alt: "Composição que representa o cuidado e a sutileza do resultado — antes e depois",
+      src: "/images/img-antes-depois-1.png",
+      alt: "Antes e depois de aplicação de botox na testa, suavizando rugas de expressão",
     },
     caseLabel: "Caso 01",
-    caseTitle: "Contorno e leveza",
+    caseTitle: "Suavização de rugas de expressão",
     badge: "antes / depois",
   },
   quoteLabel: "O que importa",

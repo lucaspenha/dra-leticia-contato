@@ -27,17 +27,17 @@ export function Resultados() {
       </div>
 
       <div className="mt-16 grid gap-8 lg:grid-cols-[1.15fr_.85fr]">
-        <Reveal className="rounded-brand relative min-h-[380px] overflow-hidden">
+        <Reveal className="rounded-brand bg-forest-900 relative min-h-[380px] overflow-hidden">
           <Image
             src={resultsSection.showcase.image.src}
             alt={resultsSection.showcase.image.alt}
             fill
             sizes="(min-width: 1024px) 55vw, 100vw"
-            className="object-cover"
+            className="object-contain"
           />
           <div
             aria-hidden
-            className="from-forest-900/70 absolute inset-0 bg-linear-to-t to-transparent"
+            className="from-forest-900/60 absolute inset-0 bg-linear-to-t to-transparent"
           />
           <div className="bg-cream-50/85 text-forest-700 absolute bottom-5 left-5 px-4 py-3">
             <span className="text-gold-600 text-[.67rem] font-semibold tracking-[0.22em] uppercase">
