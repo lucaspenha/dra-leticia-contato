@@ -32,7 +32,7 @@ export function Localizacao() {
           >
             <span className="text-gold-600 font-mono text-[10px]">0{index + 1}</span>
             <h3 className="font-display text-forest-700 mt-5 text-3xl">{location.label}</h3>
-            <p className="text-ink-500 mt-3 max-w-[200px] text-[12px] leading-5">
+            <p className="text-ink-500 mt-3 max-w-[220px] text-[12px] leading-5">
               {location.address}
             </p>
             <WhatsAppLink

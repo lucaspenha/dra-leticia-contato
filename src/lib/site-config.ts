@@ -28,7 +28,7 @@ export const siteConfig = {
       id: "perdizes",
       label: "Perdizes",
       address: "Rua Antônio Tomé de Resende, 276",
-      mapsQuery: "Rua Antônio Tomé de Resende, 276, Perdizes, São Paulo - SP",
+      mapsQuery: "Rua Antônio Tomé de Resende, 276, Perdizes - MG",
     },
     {
       id: "ribeirao-preto",
