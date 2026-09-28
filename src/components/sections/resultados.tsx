@@ -1,6 +1,6 @@
 import { Check, Star } from "lucide-react";
-import Image from "next/image";
 
+import { ResultsCarousel } from "@/components/results-carousel";
 import { Reveal } from "@/components/ui/reveal";
 import { Section } from "@/components/ui/section";
 import { WhatsAppLink } from "@/components/whatsapp-link";
@@ -27,27 +27,8 @@ export function Resultados() {
       </div>
 
       <div className="mt-16 grid gap-8 lg:grid-cols-[1.15fr_.85fr]">
-        <Reveal className="rounded-brand bg-forest-900 relative min-h-[380px] overflow-hidden">
-          <Image
-            src={resultsSection.showcase.image.src}
-            alt={resultsSection.showcase.image.alt}
-            fill
-            sizes="(min-width: 1024px) 55vw, 100vw"
-            className="object-contain"
-          />
-          <div
-            aria-hidden
-            className="from-forest-900/60 absolute inset-0 bg-linear-to-t to-transparent"
-          />
-          <div className="bg-cream-50/85 text-forest-700 absolute bottom-5 left-5 px-4 py-3">
-            <span className="text-gold-600 text-[.67rem] font-semibold tracking-[0.22em] uppercase">
-              {resultsSection.showcase.caseLabel}
-            </span>
-            <p className="mt-1 text-[11px]">{resultsSection.showcase.caseTitle}</p>
-          </div>
-          <div className="border-cream-50/30 text-cream-50 absolute top-5 right-5 rounded-full border px-3 py-2 text-[9px] tracking-[0.12em] uppercase">
-            {resultsSection.showcase.badge}
-          </div>
+        <Reveal>
+          <ResultsCarousel cases={resultsSection.cases} badge={resultsSection.badge} />
         </Reveal>
 
         <Reveal
