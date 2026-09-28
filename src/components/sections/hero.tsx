@@ -11,18 +11,19 @@ export function Hero() {
       id="inicio"
       className="bg-forest-900 text-cream-50 relative isolate min-h-[760px] overflow-hidden lg:min-h-[830px]"
     >
-      <Image
-        src={hero.image.src}
-        alt={hero.image.alt}
-        fill
-        priority
-        sizes="100vw"
-        className="object-cover opacity-35"
-        style={{ objectPosition: "75% center" }}
-      />
+      <div className="absolute inset-0 lg:bottom-auto lg:h-[75%]">
+        <Image
+          src={hero.image.src}
+          alt={hero.image.alt}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[75%_center] opacity-35 lg:origin-top-right lg:scale-[2.2] lg:object-contain lg:object-right-top"
+        />
+      </div>
       <div
         aria-hidden
-        className="from-forest-900 via-forest-900/72 absolute inset-0 bg-linear-to-r to-transparent"
+        className="from-forest-900 via-forest-900 absolute inset-0 hidden bg-linear-to-r via-30% to-transparent lg:block"
       />
       <div
         aria-hidden

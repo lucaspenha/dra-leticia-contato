@@ -8,11 +8,7 @@ export function Doutora() {
     <Section id="dra-leticia" className="bg-cream-50 overflow-hidden">
       <div className="grid grid-cols-1 gap-12 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
         <Reveal className="lg:order-2">
-          <DoctorPhoto
-            src={doctorSection.photo.src}
-            alt={doctorSection.photo.alt}
-            caption={doctorSection.photo.caption}
-          />
+          <DoctorPhoto src={doctorSection.photo.src} alt={doctorSection.photo.alt} />
         </Reveal>
 
         <Reveal delay={80} className="lg:order-1">

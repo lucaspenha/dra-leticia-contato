@@ -21,20 +21,20 @@ export const siteConfig = {
     {
       id: "araxa",
       label: "Araxá",
-      address: "Rua Presidente Olegário Maciel, 198",
-      mapsQuery: "Rua Presidente Olegário Maciel, 198, Araxá - MG",
+      address: "Rua Santos Dumont, 35, salas 1, 2 e 3",
+      mapsQuery: "Rua Santos Dumont, 35, Araxá - MG",
     },
     {
       id: "perdizes",
       label: "Perdizes",
-      address: "Rua Cardoso de Almeida, 1.620",
-      mapsQuery: "Rua Cardoso de Almeida, 1620, Perdizes, São Paulo - SP",
+      address: "Rua Antônio Tomé de Resende, 276",
+      mapsQuery: "Rua Antônio Tomé de Resende, 276, Perdizes, São Paulo - SP",
     },
     {
       id: "ribeirao-preto",
       label: "Ribeirão Preto",
-      address: "Av. Independência, 2.890",
-      mapsQuery: "Av. Independência, 2890, Ribeirão Preto - SP",
+      address: "Av. Antônio Diederichsen, 400",
+      mapsQuery: "Av. Antônio Diederichsen, 400, Ribeirão Preto - SP",
     },
   ] satisfies Location[],
 } as const;

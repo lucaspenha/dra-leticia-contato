@@ -4,6 +4,6 @@ export const locationsSection = {
   eyebrow: "Onde cuidar de você",
   title: "Três endereços,",
   titleEmphasis: "o mesmo cuidado.",
-  lead: "Escolha o consultório mais conveniente para você. Em qualquer cidade, você encontra um espaço reservado, acolhedor e preparado para receber sua história.",
+  lead: "Escolha o endereço mais próximo para você.",
   ctaLabel: "Agendar neste endereço",
 } as const;

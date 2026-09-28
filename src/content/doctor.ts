@@ -14,9 +14,5 @@ export const doctorSection = {
   photo: {
     src: "/images/portrait-leticia.jpg",
     alt: "Dra. Letícia em seu consultório",
-    caption: {
-      line1: "com calma,",
-      line2: "sempre",
-    },
   },
 } as const;
