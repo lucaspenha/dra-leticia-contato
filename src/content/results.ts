@@ -88,11 +88,11 @@ export const resultsSection = {
     },
     {
       image: {
-        src: "/images/package-lock.jpeg",
-        alt: "Antes e depois de package lock",
+        src: "/images/botox-regiao-dos-olhos.jpeg",
+        alt: "Antes e depois de botox na região dos olhos",
       },
       caseLabel: "Caso 11",
-      caseTitle: "Package lock",
+      caseTitle: "Botox na região dos olhos",
     },
   ],
   quoteLabel: "O que importa",
