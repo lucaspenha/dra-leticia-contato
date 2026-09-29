@@ -27,7 +27,7 @@ export function Resultados() {
       </div>
 
       <div className="mt-16 grid gap-8 lg:grid-cols-[1.15fr_.85fr]">
-        <Reveal>
+        <Reveal className="min-w-0">
           <ResultsCarousel cases={resultsSection.cases} badge={resultsSection.badge} />
         </Reveal>
 

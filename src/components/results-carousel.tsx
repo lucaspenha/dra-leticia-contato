@@ -33,7 +33,7 @@ export function ResultsCarousel({ cases, badge }: { cases: readonly ResultCase[]
   }, [emblaApi, onSelect]);
 
   return (
-    <div className="relative">
+    <div className="relative min-w-0">
       <div className="overflow-hidden" ref={emblaRef}>
         <div className="flex">
           {cases.map((item) => (
@@ -82,7 +82,7 @@ export function ResultsCarousel({ cases, badge }: { cases: readonly ResultCase[]
         <ChevronRight className="text-cream-50 h-5 w-5" />
       </button>
 
-      <div className="mt-6 flex justify-center gap-2">
+      <div className="mt-6 flex flex-wrap justify-center gap-2">
         {cases.map((item, index) => (
           <button
             key={item.image.src + "-dot"}
